@@ -29,17 +29,17 @@
     <!--- NAVBAR ------------------------->
     {{- partial "navigators/navbar.html" . -}}
 
-    <!--- HOME / HERO --------------------->
-    {{- partial "sections/home.html" . -}}
-
     <!--- FLIP TOGGLE BUTTON -------------->
-    <div class="container text-center py-3">
+    <div class="container text-center position-relative" style="z-index: 10; margin-top: 70px;">
       <button id="view-toggle" class="btn btn-outline-primary rounded-pill px-4" onclick="toggleView()">
         <i class="fas fa-exchange-alt me-2"></i>Flip to Personal
       </button>
     </div>
 
-    <!--- SECTIONS ------------------------>
+    <!--- HOME / HERO --------------------->
+    {{- partial "sections/home.html" . -}}
+
+
     {{ $sections:= site.Data.sections }}
     {{ if (index site.Data site.Language.Lang).sections }}
       {{ $sections = (index site.Data site.Language.Lang).sections }}
