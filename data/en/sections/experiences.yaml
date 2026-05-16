@@ -16,22 +16,14 @@ experiences:
       logo: ""
       overview: "Payment services platform powering epayments, loyalty/rewards, and merchant portals in Singapore."
     positions:
-      - designation: "QA / Performance Testing Engineer"
-        start: "May 2025"
+      - designation: "QA Engineer"
+        start: "May 2022"
         end: "Present"
         responsibilities:
-          - "Performance testing with JMeter, reporting results to stakeholders"
           - "Functional testing of payment flows, loyalty systems, and merchant portals"
-          - "Test automation using Karate DSL framework"
-          - "Investigating production issues and maintaining test environments"
-      - designation: "Software QA Engineer"
-        start: "May 2022"
-        end: "May 2025"
-        responsibilities:
-          - "Led QA for AXS payment platform (epayments, app, merchant portal)"
-          - "Performance testing with JMeter, analysis, and reporting"
-          - "Test automation with Selenium, Appium, Playwright, Karate"
+          - "Test automation with Selenium, Appium, Playwright, and Karate"
           - "Managed QA environments and CI/CD pipeline in Jenkins"
+          - "Investigating production issues and maintaining test environments"
 
   - company:
       name: "ComfortDelGro"
