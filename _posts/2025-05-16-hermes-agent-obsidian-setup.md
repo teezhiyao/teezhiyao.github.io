@@ -166,14 +166,6 @@ sed -i 's/TELEGRAM_BOT_TOKEN=.*/TELEGRAM_BOT_TOKEN=<your-token>/' \
 curl -s "https://api.telegram.org/bot<your-token>/getMe"
 ```
 
-**Fix the credential pool:**
-
-On first start after cloning, the profile's `auth.json` may have empty credential pools. Copy the global pool:
-
-```bash
-cp ~/.hermes/auth.json ~/.hermes/profiles/<new-profile-name>/auth.json
-```
-
 **Create SOUL.md for personality:**
 
 ```markdown
@@ -320,3 +312,38 @@ ls ~/obsidian/Hermes/Personal/Blog/.git
 ```
 
 This allows the blog profile agent to edit blog content while personal notes stay in their own repository. Other candidates for this pattern include project documentation, configuration files, or per-project repos.
+
+---
+
+## FAQ
+
+### Credential Pool is Empty After Cloning a Profile
+
+**Problem:** After cloning a profile with `cp -r ~/.hermes/profiles/work ~/.hermes/profiles/<name>`, the new profile's `auth.json` may have empty credential pools. The gateway starts but can't authenticate with any LLM provider.
+
+**Fix:** Copy the global credential pool to the new profile:
+
+```bash
+cp ~/.hermes/auth.json ~/.hermes/profiles/<new-profile-name>/auth.json
+```
+
+Then restart the gateway:
+
+```bash
+hermes gateway restart --profile <new-profile-name>
+```
+
+### Prompt Template for Setting Up a New Bot Profile
+
+If you're using Hermes Agent, you can ask your bot to create a new profile by loading the relevant skill and describing what you need. Here's a reusable prompt:
+
+> Load the `telegram-topic-setup` skill and create a new Hermes profile called `<name>`. Use the Telegram bot token `<token>` from @BotFather. Clone from the `work` profile. Set it up with topic routing in the existing supergroup and configure `ignored_threads` so it only responds in its own topic.
+
+You can save this as a note in your Obsidian vault and paste it whenever you need a new bot. The agent will:
+1. Clone the profile from the source
+2. Restore API keys from the source `.env`
+3. Set the Telegram bot token
+4. Copy the credential pool
+5. Create a `SOUL.md` with the role description
+6. Configure topic routing and `ignored_threads`
+7. Start the gateway
