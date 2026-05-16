@@ -333,6 +333,45 @@ Then restart the gateway:
 hermes gateway restart --profile <new-profile-name>
 ```
 
+### Starting Hermes Gateway on System Boot
+
+To have your Hermes gateway profiles start automatically when the Raspberry Pi boots up:
+
+**Step 1 — Enable user linger** (so services run even when no one is SSH'd in):
+
+```bash
+sudo loginctl enable-linger $USER
+```
+
+**Step 2 — Install each profile as a systemd service:**
+
+```bash
+source ~/.hermes/hermes-agent/venv/bin/activate
+hermes --profile <name> gateway install
+```
+
+This creates a systemd user service at `~/.config/systemd/user/hermes-gateway-<name>.service`.
+
+**Step 3 — Enable the service to start on boot:**
+
+```bash
+systemctl --user enable hermes-gateway-<name>.service
+```
+
+**Step 4 — Start it now:**
+
+```bash
+systemctl --user start hermes-gateway-<name>.service
+```
+
+Repeat steps 2–4 for each profile (default, work, qa-planner, blog, etc.).
+
+**Verify all are running:**
+
+```bash
+systemctl --user status hermes-gateway-*.service
+```
+
 ### Prompt Template for Setting Up a New Bot Profile
 
 If you're using Hermes Agent, you can ask your bot to create a new profile by loading the relevant skill and describing what you need. Here's a reusable prompt:
