@@ -55,6 +55,8 @@ The Hermes vault is at `~/obsidian/Hermes/`. The agent accesses notes directly t
 git clone --recurse-submodules git@github.com:teezhiyao/obsidian.git ~/obsidian
 ```
 
+### Sync Script
+
 Sync runs via a script at `~/obsidian/sync.sh`:
 
 ```bash
@@ -66,7 +68,49 @@ git commit -m "Auto-sync $(date +%Y-%m-%d_%H:%M)"
 git push --recurse-submodules=on-demand
 ```
 
-Sync is triggered manually (`./sync.sh`) rather than on a cron schedule to minimize SD card writes.
+### Auto-Sync on a Schedule
+
+The sync script can be run on a fixed interval using cron. On the Raspberry Pi:
+
+```bash
+crontab -e
+```
+
+Add a line to run every 30 minutes:
+
+```cron
+*/30 * * * * /home/pi/obsidian/sync.sh
+```
+
+Adjust the interval based on your needs — every 15 minutes for active writing, hourly for casual use. Note that frequent writes can wear out SD cards on a Pi, so consider running sync on a schedule that balances freshness with longevity.
+
+### Syncing on Android (Termux + Obsidian Git)
+
+To sync your Obsidian vault on an Android device:
+
+1. **Install Termux** from F-Droid (recommended over the Play Store version — it's more up to date)
+2. **Install dependencies:**
+   ```bash
+   pkg update && pkg install git openssh
+   ```
+3. **Set up SSH keys** (same keys you use on other devices):
+   ```bash
+   ssh-keygen -t rsa -b 4096
+   cat ~/.ssh/id_rsa.pub
+   ```
+   Add the public key to GitHub under Settings → SSH and GPG keys.
+4. **Clone the vault:**
+   ```bash
+   git clone --recurse-submodules git@github.com:teezhiyao/obsidian.git ~/storage/shared/Obsidian
+   ```
+5. **Grant storage permissions:**
+   ```bash
+   termux-setup-storage
+   ```
+   This makes your vault accessible from Obsidian on Android.
+6. **Install Obsidian Git plugin** — Open Obsidian, go to Settings → Community plugins → Browse, search for "Obsidian Git". Configure it to run the backup/push on a schedule (e.g. every 60 minutes) or manually via command palette.
+
+The combination of Termux for the git backend and the Obsidian Git plugin for the UI means your Android device stays in sync with the same vault — write a note on your phone during a commute, and it's on your Pi by the time you're home.
 
 ## Multi-Profile Telegram Bot Setup
 
