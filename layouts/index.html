@@ -29,13 +29,6 @@
     <!--- NAVBAR ------------------------->
     {{- partial "navigators/navbar.html" . -}}
 
-    <!--- FLIP TOGGLE BUTTON -------------->
-    <div class="container text-center position-relative" style="z-index: 10; margin-top: 70px;">
-      <button id="view-toggle" class="btn btn-outline-primary rounded-pill px-4" onclick="toggleView()">
-        <i class="fas fa-exchange-alt me-2"></i>Flip to Personal
-      </button>
-    </div>
-
     <!--- HOME / HERO --------------------->
     {{- partial "sections/home.html" . -}}
 
@@ -105,7 +98,7 @@
       function toggleView() {
         const pro = document.getElementById('professional-view');
         const per = document.getElementById('personal-view');
-        const btn = document.getElementById('view-toggle');
+        const label = document.getElementById('view-toggle-label');
         const outgoing = pro.style.display !== 'none' ? 'professional' : 'personal';
         const incoming = outgoing === 'professional' ? 'personal' : 'professional';
 
@@ -120,9 +113,7 @@
           // force reflow then fade in
           void inEl.offsetWidth;
           inEl.style.opacity = '1';
-          btn.innerHTML = incoming === 'personal'
-            ? '<i class="fas fa-exchange-alt me-2"></i>Flip to Professional'
-            : '<i class="fas fa-exchange-alt me-2"></i>Flip to Personal';
+          label.textContent = incoming === 'personal' ? 'Professional' : 'Personal';
         }, 150);
       }
     </script>
