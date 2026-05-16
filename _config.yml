@@ -68,7 +68,7 @@ defaults:
 author:
   name: "Tee Zhi Yao"
   avatar: "/assets/images/Tee_Zhi_Yao_photo.jpg"
-  bio: "Graduated from SUTD in 2020. Currently working at Enouvo as a QA/performance testing engineer on the AXS payment platform." # Note: Markdown is allowed
+  bio: "Graduated from SUTD in 2020. QA engineer focused on payment systems, SaaS platforms, and automation testing." # Note: Markdown is allowed
   location: "Singapore"
   links:
     - label: "Email"
