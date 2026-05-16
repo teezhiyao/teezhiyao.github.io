@@ -1,13 +1,11 @@
 ---
 title: "AWS Certified Cloud Practitioner"
-categories:
-  - learning
-tags:
-  - certification
+date: 2022-01-25
+categories: [learning]
+tags: [certification, aws]
 ---
 
-<!-- ![Cloud Practitioner Logo]({{site.url}}/assets/images/AWS_CCP_logo.png) -->
-<div style="height:270px; width:150px;background-color:Silver" >
+<div style="height:270px; width:150px;background-color:Silver">
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bbc12013-be20-42f8-a2e3-2b2ef25c25d8" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
 
@@ -30,12 +28,12 @@ As a foundational certification, I feel that the difficulty of the exam is quite
 
 The exam contains 2 types of questions, multiple choice and multiple response. An interesting aspect of the exam is that although the exam includes 65 questions. Only 50 questions will affect the score. As per the exam guide, the allocation between each section is shown in the table below
 
-| Domain                  | % of exam |
-| ----------------------- | --------- |
-| Cloud Concepts          | 26        |
-| Security and Compliance | 25        |
-| Technology              | 33        |
-| Billing and Pricing     | 16        |
+| Domain | % of exam |
+| ------ | --------- |
+| Cloud Concepts | 26 |
+| Security and Compliance | 25 |
+| Technology | 33 |
+| Billing and Pricing | 16 |
 
 #### Cloud Concepts
 

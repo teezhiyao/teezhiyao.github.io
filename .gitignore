@@ -1,5 +1,14 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# Hugo
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# Node
+node_modules/
+package.json
+package-lock.json
+package.hugo.json
+
+# OS
+.DS_Store
+Thumbs.db

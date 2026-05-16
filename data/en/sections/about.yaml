@@ -1,0 +1,27 @@
+section:
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+title: About Me
+description: QA Engineer | OMSCS Student | Homelab Enthusiast
+
+sections:
+  - type: "timeline"
+    items:
+      - title: "Current Role"
+        subtitle: "AXS Pte Ltd"
+        description: "QA/Performance Testing Engineer working on payment systems, loyalty/rewards platforms, and merchant portals."
+        icon: "fas fa-briefcase"
+
+      - title: "Education"
+        subtitle: "Georgia Tech OMSCS"
+        description: "Pursuing Master's in Computer Science (Machine Learning specialization, Jan 2024 – May 2027). GPA: 3.77/4.0. Coursework: Machine Learning, Computer Vision, AI for Robotics, Game Theory."
+        icon: "fas fa-graduation-cap"
+
+      - title: "Interests"
+        subtitle: "Homelab & Automation"
+        description: "Running Hermes Agent on Raspberry Pi for automation, self-hosted services, and personal projects."
+        icon: "fas fa-microchip"

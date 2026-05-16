@@ -1,0 +1,34 @@
+section:
+  id: achievements
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  template: sections/achievements.html
+
+title: Achievements
+description: Awards and recognitions
+
+achievements:
+  - title: "NDSC 2019 (Top 18%)"
+    subtitle: "National Data Science Challenge"
+    date: "2019"
+    summary: "Achieved top 18% in Singapore's national data science competition organized by Shopee and GIC."
+    icon: "fas fa-trophy"
+
+  - title: "CDDC 2019 (Bronze Award)"
+    subtitle: "Cyber Defenders Discovery Camp"
+    date: "2019"
+    summary: "Bronze award in nation-wide cybersecurity competition organized by CSIT."
+    icon: "fas fa-shield-alt"
+
+  - title: "Predix Hackathon (Winner, Renewables Track)"
+    subtitle: "GE Digital"
+    date: "2018"
+    summary: "Won the Renewables track at GE's Predix Hackathon with an IoT-based energy optimization solution."
+    icon: "fas fa-bolt"
+
+  - title: "SIA App Challenge (Top 6 Finalist)"
+    subtitle: "Singapore Airlines"
+    date: "2019"
+    summary: "Top 6 finalist in Singapore Airlines' app innovation challenge, competing against teams from top universities."
+    icon: "fas fa-plane"

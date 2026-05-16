@@ -1,0 +1,9 @@
+section:
+  id: featured-posts
+  enable: true
+  weight: 8
+  showOnNavbar: false
+  template: sections/featured-posts.html
+
+# No manual entries needed — Toha auto-discovers posts from content/posts/
+# This section file just enables the featured posts banner on the homepage.

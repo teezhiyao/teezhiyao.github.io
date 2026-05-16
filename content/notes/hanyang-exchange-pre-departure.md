@@ -1,13 +1,11 @@
 ---
-title: "Hanyang Exchange - 1 Pre-departure"
-categories:
-  - exchange
-tags:
-  - documentation
-  - sample
+title: "Hanyang Exchange - Pre-departure"
+date: 2019-08-24
+categories: [exchange]
+tags: [documentation, korea, hanyang]
 ---
 
-![header image]({{site.url}}/assets/images/hanyang-1.jpg)
+![header image](/assets/images/hanyang-1.jpg)
 
 Exchange!!! Consolidated some information which might be useful for those going to hanyang for exchange in the future.
 
@@ -27,12 +25,12 @@ A recommended course to take is [Introductory to Korean](https://www.hanyangexch
 
 For ISTD-related courses, courses we took
 
-| Track                   | Hanyang                                         | SUTD                            |
-| ----------------------- | ----------------------------------------------- | ------------------------------- |
-| Computer Engineering    | ENE4019 Computer Networks                       | 50.012 Networks                 |
-| Artificial Intelligence | ITE3051 Artificial Intelligence and Application | 50.021 Artificial Intelligence  |
-| Financial Technology    | ITE3016 Database System                         | 50.043 Database and Big Data    |
-| Financial Technology    | BUS3002 Financial Management                    | 40.240 Investment Science (ESD) |
+| Track | Hanyang | SUTD |
+| ----- | ------- | ---- |
+| Computer Engineering | ENE4019 Computer Networks | 50.012 Networks |
+| Artificial Intelligence | ITE3051 Artificial Intelligence and Application | 50.021 Artificial Intelligence |
+| Financial Technology | ITE3016 Database System | 50.043 Database and Big Data |
+| Financial Technology | BUS3002 Financial Management | 40.240 Investment Science (ESD) |
 
 Although there is a machine learning theory in the pre-approved course list, it's most likely not offered any more. Therefore, we will most likely have to take Statistical ML from ESD in Term 7.
 

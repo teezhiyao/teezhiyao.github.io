@@ -1,0 +1,102 @@
+section:
+  id: experiences
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  template: sections/experiences.html
+
+title: Experience
+description: Work history
+
+experiences:
+  - company:
+      name: "AXS Pte Ltd"
+      url: "https://axs.com.sg"
+      location: "Singapore"
+      logo: ""
+      overview: ""
+    positions:
+      - designation: "QA / Performance Testing Engineer"
+        start: "May 2025"
+        end: "Present"
+        responsibilities:
+          - "Performance testing with JMeter, reporting results to stakeholders"
+          - "Functional testing of payment flows, loyalty systems, and merchant portals"
+          - "Test automation using Karate DSL framework"
+          - "Investigating production issues and maintaining test environments"
+
+  - company:
+      name: "Enouvo"
+      url: "https://enouvo.com"
+      location: "Singapore"
+      logo: ""
+      overview: ""
+    positions:
+      - designation: "Software QA Engineer"
+        start: "May 2022"
+        end: "May 2025"
+        responsibilities:
+          - "Led QA for AXS payment platform (epayments, app, merchant portal)"
+          - "Performance testing with JMeter, analysis, and reporting"
+          - "Test automation with Selenium, Appium, Playwright, Karate"
+          - "Managed QA environments and CI/CD pipeline in Jenkins"
+
+  - company:
+      name: "ComfortDelGro"
+      url: "https://www.comfortdelgro.com"
+      location: "Singapore"
+      logo: ""
+      overview: ""
+    positions:
+      - designation: "Software QA Engineer"
+        start: "Apr 2021"
+        end: "Mar 2022"
+        responsibilities:
+          - "Functional, UI, mobile, API, and E2E testing for ComfortDelGro Taxi app"
+          - "Authored test cases and managed bug life cycle in JIRA"
+          - "Developed test automation using Python + Appium"
+
+  - company:
+      name: "ByteDance"
+      url: "https://www.bytedance.com"
+      location: "Singapore"
+      logo: ""
+      overview: ""
+    positions:
+      - designation: "QA Automation Intern"
+        start: "Jun 2020"
+        end: "Dec 2020"
+        responsibilities:
+          - "Developed automated test library for repair detection using Golang"
+          - "Built back-end testing framework with JUnit + REST Assured"
+          - "Conducted data analysis and performance testing for TikTok videos"
+
+  - company:
+      name: "Shopee"
+      url: "https://shopee.sg"
+      location: "Singapore"
+      logo: ""
+      overview: ""
+    positions:
+      - designation: "QA Intern"
+        start: "Jan 2020"
+        end: "Apr 2020"
+        responsibilities:
+          - "UI automation for Shopee Marketplace Android app with Appium"
+          - "Manual testing and exploratory testing of new features"
+          - "Bug reporting and verification in JIRA"
+
+  - company:
+      name: "ADSC (Centre for Strategic Infocomm Technologies)"
+      url: "https://www.csit.gov.sg"
+      location: "Singapore"
+      logo: ""
+      overview: ""
+    positions:
+      - designation: "Cybersecurity Intern"
+        start: "May 2019"
+        end: "Aug 2019"
+        responsibilities:
+          - "Developed web scraping and vulnerability detection tools in Python"
+          - "Implemented spam classifier using Scikit-learn (93% accuracy)"
+          - "Developed end-to-end defect tracking system using Flask"

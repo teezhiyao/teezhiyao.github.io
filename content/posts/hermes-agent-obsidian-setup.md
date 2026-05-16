@@ -1,10 +1,8 @@
 ---
-layout: single
 title: "Multi-Profile Telegram Bot Setup with Hermes Agent and Obsidian"
 date: 2025-05-16
 categories: [setup, automation, homelab]
 tags: [hermes-agent, obsidian, raspberry-pi, telegram, git, multi-agent]
-author_profile: true
 ---
 
 This post documents my setup: a Hermes Agent running on a Raspberry Pi with multiple Telegram bot profiles, each assigned to its own topic within a single supergroup. The entire system integrates with an Obsidian vault for persistent note storage and git-backed sync.

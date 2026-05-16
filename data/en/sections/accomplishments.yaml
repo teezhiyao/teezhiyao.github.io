@@ -1,0 +1,40 @@
+section:
+  id: accomplishments
+  enable: true
+  weight: 7
+  showOnNavbar: true
+  template: sections/accomplishments.html
+
+title: Certifications
+description: Professional certifications
+
+accomplishments:
+  - name: "AWS Certified Solutions Architect – Associate (SAA-C03)"
+    issuedDate: "2023"
+    issuer: "Amazon Web Services"
+    url: ""
+    icon: "fas fa-certificate"
+
+  - name: "AWS Certified Cloud Practitioner (CLF-C01)"
+    issuedDate: "2022"
+    issuer: "Amazon Web Services"
+    url: ""
+    icon: "fas fa-certificate"
+
+  - name: "ISTQB Certified Tester Foundation Level (CTFL)"
+    issuedDate: "2022"
+    issuer: "ISTQB"
+    url: ""
+    icon: "fas fa-check-circle"
+
+  - name: "AI for Industry (AI4I)"
+    issuedDate: "2020"
+    issuer: "SUTD / AI Singapore"
+    url: ""
+    icon: "fas fa-microchip"
+
+  - name: "Data Scientist Track"
+    issuedDate: "2020"
+    issuer: "SUTD"
+    url: ""
+    icon: "fas fa-chart-line"

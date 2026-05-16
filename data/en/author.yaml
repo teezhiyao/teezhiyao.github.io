@@ -1,0 +1,26 @@
+# Personal information
+name: "Tee Zhi Yao"
+nickname: "ZY"
+image: "images/sections/author.jpg"
+greeting: "Hi, I am"
+greetingEmoji: "👋"
+title: "QA Engineer"
+greetingEmojiAnimation: "wave"
+titleType:
+  - type: "QA Engineer"
+    subType: "Payment Systems & Automation"
+  - type: "OMSCS Student"
+    subType: "Georgia Institute of Technology"
+  - type: "Homelab Enthusiast"
+    subType: "Raspberry Pi & Self-hosting"
+
+contactInfo:
+  email: teezhiyao@gmail.com
+  phone: ""
+  github: teezhiyao
+  linkedin: teezhiyao
+
+summary:
+  - "QA engineer focused on payment systems, SaaS platforms, and automation testing."
+  - "Master's student in Computer Science (Machine Learning) at Georgia Tech."
+  - "Building a homelab with Raspberry Pi for self-hosting, automation, and learning."
