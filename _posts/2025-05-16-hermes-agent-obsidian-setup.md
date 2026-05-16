@@ -40,10 +40,9 @@ The Pi runs 24/7 as my always-on backend node. It's low-power, silent, and perfe
 
 ## Telegram Bot Profiles
 
-Hermes Agent supports profiles—separate configurations with their own Telegram bots, personalities, and access permissions. I run three profiles:
+Hermes Agent supports profiles—separate configurations with their own Telegram bots, personalities, and access permissions. I run a couple of profiles for different contexts:
 
-- **Blog** — This bot, used for content management and writing
-- **Work** — Connected to my work vault, focused on performance testing and QA
+- **Blog** — Used for content management and writing
 - **QA Planner** — A dedicated QA engineering bot with its own persona
 
 Each profile gets its own Telegram bot token (created via [@BotFather](https://t.me/BotFather)) and runs as an independent gateway process.
