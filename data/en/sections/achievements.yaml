@@ -1,10 +1,10 @@
 section:
   id: achievements
   name: "Achievements"
-  enable: true
+  enable: false
   view: professional
   weight: 6
-  showOnNavbar: true
+  showOnNavbar: false
   template: sections/achievements.html
 
 title: Achievements
