@@ -48,18 +48,18 @@ hermes setup
 
 ## Obsidian Vault Integration
 
-The Hermes vault is at `/home/oayihzeet/github/obsidian/Hermes/`. The agent accesses notes directly through file system tools. The vault uses git for sync:
+The Hermes vault is at `~/obsidian/Hermes/`. The agent accesses notes directly through file system tools. The vault uses git for sync:
 
 ```bash
 # Clone the vault
-git clone --recurse-submodules git@github.com:teezhiyao/obsidian.git ~/github/obsidian
+git clone --recurse-submodules git@github.com:teezhiyao/obsidian.git ~/obsidian
 ```
 
-Sync runs via a script at `/home/oayihzeet/github/obsidian/sync.sh`:
+Sync runs via a script at `~/obsidian/sync.sh`:
 
 ```bash
 #!/bin/bash
-cd ~/github/obsidian
+cd ~/obsidian
 git pull --recurse-submodules
 git add -A
 git commit -m "Auto-sync $(date +%Y-%m-%d_%H:%M)"
@@ -67,18 +67,6 @@ git push --recurse-submodules=on-demand
 ```
 
 Sync is triggered manually (`./sync.sh`) rather than on a cron schedule to minimize SD card writes.
-
-### Sub-Repo Pattern for Modular Content
-
-Separate git repos can live inside the vault for modular management. For example, this blog lives at `Hermes/Personal/Blog/` as a standalone Jekyll site with its own GitHub Pages deployment:
-
-```bash
-# The blog has its own .git repo nested inside the main vault
-ls ~/github/obsidian/Hermes/Personal/Blog/.git
-# It's initialized separately, not as a git submodule of the vault
-```
-
-This allows the blog profile agent to edit blog content while personal notes stay in their own repository. Other candidates for this pattern include project documentation, configuration files, or per-project repos.
 
 ## Multi-Profile Telegram Bot Setup
 
@@ -316,5 +304,19 @@ The RPi sync script pulls changes hourly on manual trigger. The sync script also
 | Check status | `hermes gateway status` |
 | View logs | `tail -f ~/.hermes/profiles/<name>/logs/gateway.log` |
 | Find thread ID | `grep 'group:-1003961507518:' ~/.hermes/profiles/<name>/logs/gateway.log` |
-| Sync vault | `cd ~/github/obsidian && ./sync.sh` |
+| Sync vault | `cd ~/obsidian && ./sync.sh` |
 | Verify bot token | `curl -s "https://api.telegram.org/bot<token>/getMe"` |
+
+---
+
+## Optional: Sub-Repo Pattern for Modular Content
+
+Separate git repos can live inside the vault for modular management. For example, this blog lives at `Hermes/Personal/Blog/` as a standalone Jekyll site with its own GitHub Pages deployment:
+
+```bash
+# The blog has its own .git repo nested inside the main vault
+ls ~/obsidian/Hermes/Personal/Blog/.git
+# It's initialized separately, not as a git submodule of the vault
+```
+
+This allows the blog profile agent to edit blog content while personal notes stay in their own repository. Other candidates for this pattern include project documentation, configuration files, or per-project repos.
