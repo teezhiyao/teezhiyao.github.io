@@ -14,7 +14,7 @@ experiences:
       url: "https://axs.com.sg"
       location: "Singapore"
       logo: ""
-      overview: ""
+      overview: "Payment services platform powering epayments, loyalty/rewards, and merchant portals in Singapore."
     positions:
       - designation: "QA / Performance Testing Engineer"
         start: "May 2025"
@@ -24,14 +24,6 @@ experiences:
           - "Functional testing of payment flows, loyalty systems, and merchant portals"
           - "Test automation using Karate DSL framework"
           - "Investigating production issues and maintaining test environments"
-
-  - company:
-      name: "Enouvo"
-      url: "https://enouvo.com"
-      location: "Singapore"
-      logo: ""
-      overview: ""
-    positions:
       - designation: "Software QA Engineer"
         start: "May 2022"
         end: "May 2025"
