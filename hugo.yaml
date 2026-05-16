@@ -52,7 +52,7 @@ params:
 
   # Top navbar
   topNavbar:
-    maxVisibleSections: 5
+    maxVisibleSections: 7
 
   # Footer
   footer:

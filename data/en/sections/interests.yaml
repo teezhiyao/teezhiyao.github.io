@@ -2,7 +2,7 @@ section:
   id: interests
   enable: true
   weight: 1
-  showOnNavbar: true
+  showOnNavbar: false
   template: sections/interests.html
   view: personal
 
