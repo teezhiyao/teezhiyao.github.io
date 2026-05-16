@@ -1,15 +1,9 @@
 main:
-  # - title: "Quick-Start Guide"
-  #   url: /docs/quick-start-guide/
   - title: "About"
     url: /about/
   - title: "Projects"
     url: /projects/
   - title: "Coding"
     url: /coding/
-  # - title: "Pages"
-  #   url: /page-archive/
-  # - title: "Collections"
-  #   url: /collection-archive/
-  # - title: "External Link"
-  #   url: https://google.com
+  - title: "Archive"
+    url: /archive/

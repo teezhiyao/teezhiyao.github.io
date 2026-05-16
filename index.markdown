@@ -1,8 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
-paginate: 5 # amount of posts to show
+paginate: 5
 paginate_path: /page:num/
 ---
+
+Older posts have been moved to the [Archive](/archive/).

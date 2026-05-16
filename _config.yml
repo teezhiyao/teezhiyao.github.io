@@ -63,6 +63,14 @@ defaults:
       layout: single
       author_profile: false
       share: true
+  # _archive
+  - scope:
+      path: ""
+      type: archive
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
 
       
 author:
@@ -98,6 +106,9 @@ footer:
 
 collections:
   portfolio:
+    output: true
+    permalink: /:collection/:path/
+  archive:
     output: true
     permalink: /:collection/:path/
 
