@@ -1,0 +1,23 @@
+#professional-view,
+#personal-view {
+  transition: opacity 0.3s ease-in-out;
+}
+
+#view-toggle {
+  font-size: 0.95rem;
+  border-width: 2px;
+  transition: all 0.3s ease;
+}
+
+#view-toggle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#view-toggle i {
+  transition: transform 0.3s ease;
+}
+
+#view-toggle:hover i {
+  transform: rotate(180deg);
+}

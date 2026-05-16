@@ -1,6 +1,7 @@
 section:
   id: experiences
   enable: true
+  view: professional
   weight: 2
   showOnNavbar: true
   template: sections/experiences.html

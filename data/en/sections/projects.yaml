@@ -1,6 +1,7 @@
 section:
   id: projects
   enable: true
+  view: professional
   weight: 9
   showOnNavbar: true
   template: sections/projects.html

@@ -1,6 +1,7 @@
 section:
   id: education
   enable: true
+  view: professional
   weight: 3
   showOnNavbar: true
   template: sections/education.html
