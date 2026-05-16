@@ -29,6 +29,6 @@ achievements:
 
   - title: "SIA App Challenge (Top 6 Finalist)"
     subtitle: "Singapore Airlines"
-    date: "2019"
-    summary: "Top 6 finalist in Singapore Airlines' app innovation challenge, competing against teams from top universities."
+    date: "2018"
+    summary: "Top 6 finalist in Singapore Airlines' 2018 app innovation challenge. Developed inventory management prototype using Raspberry Pi, Firebase, and Python."
     icon: "fas fa-plane"
