@@ -2,8 +2,7 @@ section:
   id: accomplishments
   name: "Certifications"
   enable: true
-  view: professional
-  weight: 7
+  weight: 8
   showOnNavbar: true
   template: sections/accomplishments.html
 

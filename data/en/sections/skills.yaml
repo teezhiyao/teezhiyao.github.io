@@ -2,8 +2,7 @@ section:
   id: skills
   name: "Skills"
   enable: true
-  view: professional
-  weight: 5
+  weight: 7
   showOnNavbar: true
   template: sections/skills.html
 

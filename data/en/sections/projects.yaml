@@ -2,13 +2,12 @@ section:
   id: projects
   name: "Projects"
   enable: true
-  view: professional
-  weight: 9
+  weight: 5
   showOnNavbar: true
   template: sections/projects.html
 
-title: Projects
-description: Selected projects
+title: "What I Build"
+description: Projects, experiments, and systems I build
 
 projects:
   - title: "Connect X Reinforcement Learning"
@@ -55,3 +54,12 @@ projects:
     summary: "Top 6 finalist at SIA App Challenge 2018. Developed an inventory management prototype using Raspberry Pi, Firebase, and Python."
     icon: "fas fa-trophy"
     tags: ["Hackathon", "Mobile App", "Raspberry Pi"]
+
+  - title: "Homelab & Self-Hosting"
+    role: "Builder"
+    timeline: "Ongoing"
+    url: ""
+    github: ""
+    summary: "Running Hermes Agent, automation pipelines, and self-hosted services on a Raspberry Pi cluster. Includes CI/CD experimentation and local LLM hosting."
+    icon: "fas fa-server"
+    tags: ["Linux", "Raspberry Pi", "Self-Hosting", "Automation", "Docker"]

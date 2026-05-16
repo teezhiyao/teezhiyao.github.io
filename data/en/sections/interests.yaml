@@ -1,23 +1,19 @@
 section:
   id: interests
+  name: "What I Do"
   enable: true
-  weight: 1
-  showOnNavbar: false
+  weight: 6
+  showOnNavbar: true
   template: sections/interests.html
-  view: personal
 
-title: Hobbies & Interests
-description: What I do when I'm not testing
+title: "What I Do"
+description: Hobbies and personal pursuits
 
 interests:
   - name: "Running"
     icon: "fas fa-running"
-    summary: "Long-distance runner. Completed [n] half-marathons. Training towards full marathon."
+    summary: "Long-distance runner. Training for half-marathons and working toward a full marathon."
 
   - name: "Language Learning"
     icon: "fas fa-language"
-    summary: "Actively learning languages through apps, immersion, and conversation practice. Currently focusing on [language]."
-
-  - name: "Homelab & Self-Hosting"
-    icon: "fas fa-server"
-    summary: "Running Hermes Agent, automation tools, and self-hosted services on a Raspberry Pi cluster."
+    summary: "Studying Korean. Learning through apps, immersion, and conversation practice."

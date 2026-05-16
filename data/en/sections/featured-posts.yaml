@@ -1,8 +1,7 @@
 section:
   id: featured-posts
   enable: true
-  view: professional
-  weight: 8
+  weight: 9
   showOnNavbar: false
   template: sections/featured-posts.html
 
