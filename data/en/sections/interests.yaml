@@ -1,0 +1,20 @@
+section:
+  id: interests
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  template: sections/interests.html
+
+title: Interests
+description: Hobbies and personal pursuits
+
+interests:
+  - name: "Running"
+    icon: "fas fa-running"
+    summary: "Long-distance runner. Completed [n] half-marathons. Training towards full marathon."
+    url: ""
+
+  - name: "Language Learning"
+    icon: "fas fa-language"
+    summary: "Actively studying languages through apps, immersion, and conversation practice."
+    url: ""
