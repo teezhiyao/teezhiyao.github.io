@@ -1,5 +1,6 @@
 section:
   id: about
+  name: "About Me"
   enable: true
   weight: 1
   showOnNavbar: true

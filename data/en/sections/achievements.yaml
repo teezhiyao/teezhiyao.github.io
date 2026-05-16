@@ -1,5 +1,6 @@
 section:
   id: achievements
+  name: "Achievements"
   enable: true
   view: professional
   weight: 6

@@ -1,5 +1,6 @@
 section:
   id: accomplishments
+  name: "Certifications"
   enable: true
   view: professional
   weight: 7

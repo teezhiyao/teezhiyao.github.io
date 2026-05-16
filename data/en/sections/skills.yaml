@@ -1,5 +1,6 @@
 section:
   id: skills
+  name: "Skills"
   enable: true
   view: professional
   weight: 5
