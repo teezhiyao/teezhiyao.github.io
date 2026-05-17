@@ -1,7 +1,7 @@
 section:
   id: interests
   name: "What I Do"
-  enable: true
+  enable: false
   weight: 6
   showOnNavbar: true
   template: sections/interests.html

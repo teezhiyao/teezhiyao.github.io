@@ -1,0 +1,53 @@
+section:
+  id: what-i-did
+  name: "What I Did"
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  template: sections/accomplishments.html
+
+title: "What I Did"
+description: Past projects, competitions, and experiences
+
+accomplishments:
+  - name: "NDSC 2019 (Top 18%)"
+    issuer: "National Data Science Challenge"
+    issuedDate: "2019"
+    summary: "Achieved top 18% in Singapore's national data science competition organized by Shopee and GIC."
+    url: "/tags/ndsc/"
+    icon: "fas fa-trophy"
+
+  - name: "CDDC 2019 (Bronze Award)"
+    issuer: "Cyber Defenders Discovery Camp"
+    issuedDate: "2019"
+    summary: "Bronze award in nation-wide cybersecurity competition organized by CSIT."
+    url: "/tags/cddc/"
+    icon: "fas fa-shield-alt"
+
+  - name: "Predix Hackathon (Winner, Renewables Track)"
+    issuer: "GE Digital"
+    issuedDate: "2018"
+    summary: "Won the Renewables track at GE's Predix Hackathon with an IoT-based energy optimization solution."
+    url: "/tags/predix/"
+    icon: "fas fa-bolt"
+
+  - name: "SIA App Challenge (Top 6 Finalist)"
+    issuer: "Singapore Airlines"
+    issuedDate: "2018"
+    summary: "Top 6 finalist in Singapore Airlines' 2018 app innovation challenge. Developed inventory management prototype using Raspberry Pi, Firebase, and Python."
+    url: "/tags/sia-app-challenge/"
+    icon: "fas fa-plane"
+
+  - name: "Exchange Programme"
+    issuer: "Hanyang University"
+    issuedDate: "Aug – Dec 2019"
+    summary: "Exchange semester in Seoul, South Korea. Studied Data Mining, Big Data Processing, and Applied Machine Learning."
+    url: "/tags/hanyang/"
+    icon: "fas fa-globe-asia"
+
+  - name: "Internship"
+    issuer: "Advanced Digital Sciences Center (ADSC)"
+    issuedDate: "May – Aug 2019"
+    summary: "Software Engineer Intern developing an Eclipse plug-in implementing STLSA process for safety engineering."
+    url: "/tags/internship/"
+    icon: "fas fa-briefcase"
