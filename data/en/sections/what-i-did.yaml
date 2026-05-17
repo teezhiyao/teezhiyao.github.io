@@ -4,7 +4,7 @@ section:
   enable: true
   weight: 6
   showOnNavbar: true
-  template: sections/accomplishments.html
+  template: sections/what-i-did.html
 
 title: "What I Did"
 description: Past projects, competitions, and experiences
