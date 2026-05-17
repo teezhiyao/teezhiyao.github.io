@@ -10,6 +10,34 @@ title: "What I Did"
 description: Old projects, competitions, and past experiences
 
 accomplishments:
+  - name: "Connect X Reinforcement Learning"
+    issuer: "SUTD — Deep Learning Coursework"
+    issuedDate: "2020"
+    summary: "Deep Q-Learning agent with experience replay for Connect X."
+    url: ""
+    icon: "fas fa-robot"
+
+  - name: "KITTI Object Detection (Transfer Learning)"
+    issuer: "SUTD — Computer Vision Coursework"
+    issuedDate: "2020"
+    summary: "Fine-tuned YOLOv8 on KITTI dataset for autonomous driving detection."
+    url: ""
+    icon: "fas fa-car"
+
+  - name: "Red Dot Smart Trolley System"
+    issuer: "SUTD Capstone"
+    issuedDate: "2020"
+    summary: "Smart shopping trolley with IoT sensors and QR auto-checkout."
+    url: "https://capstone2020.sutd.edu.sg/projects/smart-trolley-management-system"
+    icon: "fas fa-shopping-cart"
+
+  - name: "Chatbot for Named Entity Recognition"
+    issuer: "Personal Project"
+    issuedDate: "2024"
+    summary: "Rule-based NER chatbot with transfer learning for automated FAQ."
+    url: ""
+    icon: "fas fa-comments"
+
   - name: "NDSC 2019 (Top 18%)"
     issuer: "National Data Science Challenge"
     issuedDate: "2019"

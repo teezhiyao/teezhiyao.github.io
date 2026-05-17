@@ -1,60 +1,15 @@
 section:
   id: projects
-  name: "Projects"
+  name: "Building"
   enable: true
   weight: 5
   showOnNavbar: true
   template: sections/projects.html
 
-title: "What I Build"
-description: Projects, experiments, and systems I build
+title: "What I'm Building"
+description: Current projects and experiments
 
 projects:
-  - title: "Connect X Reinforcement Learning"
-    role: "Developer"
-    timeline: "2020"
-    url: ""
-    github: ""
-    summary: "Reinforcement learning agent for Connect X using Deep Q-Learning with experience replay. Deep Learning coursework at SUTD."
-    icon: "fas fa-robot"
-    tags: ["Python", "PyTorch", "Reinforcement Learning", "Deep Q-Learning"]
-
-  - title: "Transfer Learning for KITTI Object Detection"
-    role: "Developer"
-    timeline: "2020"
-    url: ""
-    github: ""
-    summary: "Fine-tuned YOLOv8 on the KITTI dataset for autonomous driving object detection. Computer Vision coursework at SUTD."
-    icon: "fas fa-car"
-    tags: ["Computer Vision", "YOLOv8", "KITTI", "Transfer Learning", "Python"]
-
-  - title: "Red Dot Smart Trolley System"
-    role: "Full-Stack Developer"
-    timeline: "2020"
-    url: "https://capstone2020.sutd.edu.sg/projects/smart-trolley-management-system"
-    github: ""
-    summary: "A smart shopping trolley system integrating IoT sensors and auto-checkout via QR scanning. Capstone project at SUTD."
-    icon: "fas fa-shopping-cart"
-    tags: ["IoT", "Flutter", "Python", "Embedded Systems", "Mobile App"]
-
-  - title: "Chatbot for Named Entity Recognition"
-    role: "Developer"
-    timeline: "2024"
-    url: ""
-    github: ""
-    summary: "A chatbot system using rule-based NER and transfer learning for automated FAQ responses. Personal project."
-    icon: "fas fa-comments"
-    tags: ["NLP", "NER", "Python", "Chatbot", "Machine Learning"]
-
-  - title: "SIA App Challenge"
-    role: "Team Member"
-    timeline: "2018"
-    url: ""
-    github: ""
-    summary: "Top 6 finalist at SIA App Challenge 2018. Developed an inventory management prototype using Raspberry Pi, Firebase, and Python."
-    icon: "fas fa-trophy"
-    tags: ["Hackathon", "Mobile App", "Raspberry Pi"]
-
   - title: "Homelab & Self-Hosting"
     role: "Builder"
     timeline: "Ongoing"
