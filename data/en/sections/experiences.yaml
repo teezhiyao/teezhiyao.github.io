@@ -22,7 +22,7 @@ experiences:
         end: "Present"
         responsibilities:
           - "Improved QA processes across SaaS platforms, backend services, and payment systems, enhancing coverage and release reliability"
-          - "End-to-end testing across backend services, SaaS platforms, and mobile features, validating complex payment workflows and third-party integrations"
+          - "Contributed to end-to-end testing across backend services, SaaS platforms, and mobile features, validating complex payment workflows and third-party integrations while ensuring cross-system consistency and reliable production releases"
           - "Worked across legacy systems and new product features, addressing integration challenges and ensuring consistent system behavior"
           - "Maintained and enhanced automation using Karate and Playwright to improve regression efficiency"
 
@@ -52,10 +52,10 @@ experiences:
         start: "June 2022"
         end: "July 2023"
         responsibilities:
-          - "Co-managed a subteam of 4-5 engineers within a 12-member team, overseeing task assignments, resource management, and test quality"
-          - "Developed and maintained automation workflows for UI testing, integrating CI/CD pipelines for Trust and Safety platforms"
-          - "Defined test strategies and oversaw validation plans for 60+ features, including Digital Wellbeing and Family Pairing"
-          - "Enhanced team productivity by automating over 70 regression scenarios using internal development frameworks"
+          - "Co-managed a subteam of 4-5 engineers within a 12-member team, overseeing task assignments, resource management, and test quality across multiple Trust and Safety projects"
+          - "Developed and maintained automation workflows for UI testing, integrating CI/CD pipelines to support deployments and quality assurance across Trust and Safety platforms"
+          - "Defined test strategies and oversaw validation plans for 60+ features, including Digital Wellbeing and Family Pairing, ensuring robust coverage and reliable feature behavior"
+          - "Enhanced team productivity by automating over 70 regression scenarios and implementing improved workflows using internal development frameworks"
 
   - company:
       name: "Shopee Singapore"
@@ -69,8 +69,8 @@ experiences:
         end: "May 2022"
         responsibilities:
           - "Automated and maintained over 700 test cases using JUnit to support regression testing across multiple regions"
-          - "Enhanced automation pipelines by customizing Jenkins configurations and creating modular reporting templates"
-          - "Supported the transition from manual to automated testing, reducing manual testing effort by over 20%"
+          - "Enhanced automation pipelines by customizing Jenkins configurations and creating modular reporting templates to improve traceability and developer productivity"
+          - "Supported the transition from manual to automated testing, reducing manual testing effort by over 20% and improving overall test quality"
 
   - company:
       name: "Advanced Digital Sciences Center (ADSC)"
@@ -79,9 +79,9 @@ experiences:
       logo: ""
       overview: "Research center focused on advanced digital technologies and software systems."
     positions:
-      - designation: "Software Engineer Intern"
+      - designation: "Junior Research Assistant"
         start: "May 2019"
         end: "Aug 2019"
         responsibilities:
-          - "Built an Eclipse plug-in for XSTAMPP implementing the STLSA safety engineering process"
-          - "Worked with safety engineering workflows and tooling for model-based analysis"
+          - "Designed and implemented a Java-based rich client application to support advanced analysis methodologies in research projects"
+          - "Developed data processing tools and algorithms in Eclipse IDE, contributing to innovative approaches in digital sciences"

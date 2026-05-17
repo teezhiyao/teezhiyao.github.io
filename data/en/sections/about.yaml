@@ -9,6 +9,9 @@ section:
 title: About Me
 description: QA Engineer | OMSCS Student | Homelab Enthusiast
 
+summary: |
+  I'm a QA/Performance Testing Engineer with a passion for automation, AI, and building things. Currently pursuing a Master's degree in Computer Science at Georgia Tech while working on side projects ranging from self-hosted infrastructure to personal automation pipelines. I believe in continuous learning, documenting my journey, and building systems that solve real problems—all pursued with intention and balance. Everything I do is anchored by "적당히 하" (doing things in moderation), a philosophy of purposefulness and equilibrium.
+
 sections:
   - type: "timeline"
     items:
@@ -19,7 +22,7 @@ sections:
 
       - title: "Education"
         subtitle: "Georgia Tech OMSCS"
-        description: "Pursuing Master's in Computer Science (Machine Learning specialization, Jan 2024 – May 2027). GPA: 3.77/4.0. Coursework: Machine Learning, Computer Vision, AI for Robotics, Game Theory."
+        description: "Pursuing Master's in Computer Science with an Artificial Intelligence specialization (Jan 2024 – May 2027). Coursework includes Artificial Intelligence, Natural Language Processing, Game AI, Operating Systems, and High Performance Computing."
         icon: "fas fa-graduation-cap"
 
       - title: "Interests"

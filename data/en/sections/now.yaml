@@ -1,32 +1,4 @@
 section:
   id: now
   name: "Now"
-  enable: true
-  weight: 4
-  showOnNavbar: true
-  template: sections/accomplishments.html
-
-title: "Now"
-description: Current personal growth, learning, and life rhythms
-
-accomplishments:
-  - name: "Korean Language"
-    issuer: "Self-study"
-    issuedDate: "Ongoing"
-    summary: "Building proficiency in Korean through apps, immersion, and conversation practice."
-    url: "/tags/korea/"
-    icon: "fas fa-language"
-
-  - name: "Google UX Design Certificate"
-    issuer: "Coursera / Google"
-    issuedDate: "Ongoing"
-    summary: "Learning UX research, wireframing, prototyping, and design thinking through Google's professional certificate program."
-    url: "/tags/ux-design/"
-    icon: "fas fa-pencil-ruler"
-
-  - name: "Running"
-    issuer: "Personal"
-    issuedDate: "Ongoing"
-    summary: "Long-distance runner. Training for half-marathons and working toward a full marathon."
-    url: "/tags/running/"
-    icon: "fas fa-running"
+  enable: false

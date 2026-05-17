@@ -2,8 +2,8 @@ section:
   id: past-projects
   name: "Past Projects"
   enable: true
-  weight: 6
-  showOnNavbar: true
+  weight: 8
+  showOnNavbar: false
   template: sections/past-projects.html
 
 title: "Past Projects"
@@ -38,14 +38,7 @@ accomplishments:
     url: ""
     icon: "fas fa-comments"
 
-  - name: "NDSC 2019 (Top 18%)"
-    issuer: "National Data Science Challenge"
-    issuedDate: "2019"
-    summary: "Top 18% in Singapore's national data science competition."
-    url: "/tags/ndsc/"
-    icon: "fas fa-trophy"
-
-  - name: "CDDC 2019 (Bronze Award)"
+  - name: "Cybersecurity Defenders Discovery Camp 2019"
     issuer: "Cyber Defenders Discovery Camp"
     issuedDate: "2019"
     summary: "Bronze award in a nation-wide cybersecurity competition."
@@ -59,7 +52,7 @@ accomplishments:
     url: "/tags/predix/"
     icon: "fas fa-bolt"
 
-  - name: "SIA App Challenge (Top 6 Finalist)"
+  - name: "SIA App Challenge"
     issuer: "Singapore Airlines"
     issuedDate: "2018"
     summary: "Built an inventory management prototype with Raspberry Pi and Firebase."

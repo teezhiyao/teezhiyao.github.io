@@ -1,13 +1,13 @@
 section:
   id: projects
-  name: "Building"
+  name: "Pursuits"
   enable: true
   weight: 5
   showOnNavbar: true
   template: sections/projects.html
 
-title: "What I'm Building"
-description: Current side projects and technical experiments
+title: "Pursuits"
+description: Current projects, learning, and sustained commitments pursued with intention and balance
 
 projects:
   - title: "Homelab & Self-Hosting"
@@ -18,3 +18,30 @@ projects:
     summary: "Running Hermes Agent, automation pipelines, and self-hosted services on a Raspberry Pi cluster. Includes CI/CD experimentation and local LLM hosting."
     icon: "fas fa-server"
     tags: ["Linux", "Raspberry Pi", "Self-Hosting", "Automation", "Docker"]
+
+  - title: "Korean Language"
+    role: "Learner"
+    timeline: "Ongoing"
+    url: "/tags/korea/"
+    github: ""
+    summary: "Building proficiency through apps, immersion, and conversation practice."
+    icon: "fas fa-language"
+    tags: ["Language Learning", "Korea"]
+
+  - title: "Google UX Design Certificate"
+    role: "Student"
+    timeline: "Ongoing"
+    url: "/tags/ux-design/"
+    github: ""
+    summary: "Learning UX research, wireframing, prototyping, and design thinking through Google's professional certificate program."
+    icon: "fas fa-pencil-ruler"
+    tags: ["UX Design", "Design Thinking"]
+
+  - title: "Health"
+    role: "Runner"
+    timeline: "Ongoing"
+    url: "/posts/2026-april-races-2xu-inco/"
+    github: ""
+    summary: "Running for fitness and enjoyment. Completed 2XU and INCO races this year while maintaining gym training—building sustainable wellness habits."
+    icon: "fas fa-heart-pulse"
+    tags: ["Fitness", "Health", "Running"]

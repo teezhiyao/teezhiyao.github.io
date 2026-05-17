@@ -1,11 +1,17 @@
-<div class="col-6 col-md-4 col-lg-2 p-1">
+<div class="col-12 col-sm-6 col-lg-3 p-2">
 {{ if .url }}<a href="{{ .url }}" class="text-decoration-none text-reset">{{ end }}
   <div class="card text-center h-100 border-0 shadow-sm">
-    <div class="card-body py-2 px-1">
+    <div class="card-body py-3 px-2">
       {{ if .icon }}
         <div class="mb-1"><span class="{{ .icon }} fa-2x"></span></div>
       {{ end }}
-      <h6 class="card-title small mb-0">{{ .name }}</h6>
+      <h6 class="card-title small mb-1">{{ .name }}</h6>
+      {{ if .issuedDate }}
+        <div class="text-muted small mb-2">{{ .issuedDate }}</div>
+      {{ end }}
+      {{ if .summary }}
+        <p class="card-text small mb-0">{{ .summary | markdownify }}</p>
+      {{ end }}
     </div>
   </div>
 {{ if .url }}</a>{{ end }}

@@ -2,7 +2,7 @@ section:
   id: accomplishments
   name: "Certifications"
   enable: true
-  weight: 8
+  weight: 6
   showOnNavbar: true
   template: sections/accomplishments.html
 
@@ -11,31 +11,31 @@ description: Professional certifications
 
 accomplishments:
   - name: "AWS Certified Solutions Architect – Associate (SAA-C03)"
-    issuedDate: "2023"
-    issuer: "Amazon Web Services"
-    url: ""
+    issuedDate: "May 2025"
+    issuer: "AWS Training and Certification"
+    url: "https://www.credly.com/badges/9693dec6-0cad-4171-8118-a33e6453d2c7/public_url"
     icon: "fas fa-certificate"
 
   - name: "AWS Certified Cloud Practitioner (CLF-C01)"
-    issuedDate: "2022"
-    issuer: "Amazon Web Services"
-    url: ""
+    issuedDate: "Feb 2022"
+    issuer: "AWS Training and Certification"
+    url: "https://www.credly.com/badges/bbc12013-be20-42f8-a2e3-2b2ef25c25d8/public_url"
     icon: "fas fa-certificate"
 
   - name: "ISTQB Certified Tester Foundation Level (CTFL)"
-    issuedDate: "2022"
-    issuer: "ISTQB"
-    url: ""
+    issuedDate: "Dec 2020"
+    issuer: "American Software Testing Qualifications Board"
+    url: "https://atsqa.org/certified-testers/profile/d2cc95a248f74c738c9516a6760948df"
     icon: "fas fa-check-circle"
 
   - name: "AI for Industry (AI4I)"
-    issuedDate: "2020"
-    issuer: "SUTD / AI Singapore"
+    issuedDate: "Apr 2020"
+    issuer: "AI Singapore"
     url: ""
     icon: "fas fa-microchip"
 
-  # - name: "Data Scientist Track"
-  #   issuedDate: "2020"
-  #   issuer: "SUTD"
-  #   url: ""
-  #   icon: "fas fa-chart-line"
+  - name: "Data Scientist with Python Track"
+    issuedDate: "Oct 2019"
+    issuer: "DataCamp"
+    url: "https://www.datacamp.com/statement-of-accomplishment/track/c42c3d3f2b1a68b0c774b613a7e1bbae7e2b13b5"
+    icon: "fas fa-chart-line"

@@ -6,7 +6,6 @@ categories: [learning, omscs]
 tags: [omscs, georgia-tech, cs-8001, seminar]
 summary: "Skeleton notes for my OMSCS reflection on CS 8001 Seminar."
 ---
-
 ## Course Snapshot
 
 - Course: CS 8001 Seminar
