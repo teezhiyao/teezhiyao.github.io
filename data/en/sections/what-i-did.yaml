@@ -7,7 +7,7 @@ section:
   template: sections/what-i-did.html
 
 title: "What I Did"
-description: Old projects, competitions, and past experiences
+description: Assortment of old projects, experiences from the past
 
 accomplishments:
   - name: "Connect X Reinforcement Learning"

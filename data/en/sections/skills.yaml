@@ -1,7 +1,7 @@
 section:
   id: skills
   name: "Skills"
-  enable: true
+  enable: false
   weight: 7
   showOnNavbar: true
   template: sections/skills.html
