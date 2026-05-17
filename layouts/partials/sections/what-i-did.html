@@ -7,6 +7,9 @@
   {{ if not (.section.hideTitle) }}
     <h1 class="text-center">
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+    {{ if .description }}
+    <p class="text-center text-muted">{{ .description }}</p>
+    {{ end }}
   {{ else }}
     <h1 class="text-center" style="display: none">
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>

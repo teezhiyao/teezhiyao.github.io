@@ -72,16 +72,4 @@ experiences:
           - "Enhanced automation pipelines by customizing Jenkins configurations and creating modular reporting templates"
           - "Supported the transition from manual to automated testing, reducing manual testing effort by over 20%"
 
-  - company:
-      name: "Advanced Digital Sciences Center (ADSC)"
-      url: "https://www.csit.gov.sg"
-      location: "Singapore"
-      logo: ""
-      overview: ""
-    positions:
-      - designation: "Junior Research Assistant"
-        start: "May 2019"
-        end: "Aug 2019"
-        responsibilities:
-          - "Designed and implemented a Java-based rich client application to support advanced analysis methodologies in research projects"
-          - "Developed data processing tools and algorithms in Eclipse IDE, contributing to innovative approaches in digital sciences"
+# ADSC Internship moved to What I Did section

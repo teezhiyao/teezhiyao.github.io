@@ -1,4 +1,5 @@
 <div class="col-6 col-md-4 col-lg-2 p-1">
+{{ if .url }}<a href="{{ .url }}" class="text-decoration-none text-reset">{{ end }}
   <div class="card text-center h-100 border-0 shadow-sm">
     <div class="card-body py-2 px-1">
       {{ if .icon }}
@@ -7,4 +8,5 @@
       <h6 class="card-title small mb-0">{{ .name }}</h6>
     </div>
   </div>
+{{ if .url }}</a>{{ end }}
 </div>

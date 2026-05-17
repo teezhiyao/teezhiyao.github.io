@@ -7,7 +7,7 @@ section:
   template: sections/what-i-did.html
 
 title: "What I Did"
-description: Past projects, competitions, and experiences
+description: Old projects, competitions, and past experiences
 
 accomplishments:
   - name: "NDSC 2019 (Top 18%)"
