@@ -44,18 +44,13 @@ Currently active homepage sections:
 - `about` - `data/en/sections/about.yaml`
 - `experiences` - `data/en/sections/experiences.yaml`
 - `education` - `data/en/sections/education.yaml`
-- `what-im-doing` - `data/en/sections/what-im-doing.yaml`
+- `now` - `data/en/sections/now.yaml`
 - `projects` / "Building" - `data/en/sections/projects.yaml`
-- `what-i-did` - `data/en/sections/what-i-did.yaml`
+- `past-projects` - `data/en/sections/past-projects.yaml`
 - `accomplishments` / "Certifications" - `data/en/sections/accomplishments.yaml`
 - `featured-posts` - `data/en/sections/featured-posts.yaml`
 
-Currently disabled but available sections:
-
-- `skills` - `data/en/sections/skills.yaml`
-- `learning` - `data/en/sections/learning.yaml`
-- `interests` - `data/en/sections/interests.yaml`
-- `achievements` - `data/en/sections/achievements.yaml`
+Disabled draft section files were removed to keep the section directory focused.
 
 ## Content Sections
 
@@ -80,10 +75,9 @@ Permalinks are configured in `hugo.yaml`:
 
 The site mostly relies on Toha defaults, with local overrides/custom partials for selected sections and cards:
 
-- `layouts/partials/sections/what-i-did.html`
-- `layouts/partials/cards/what-i-did.html`
+- `layouts/partials/sections/past-projects.html`
+- `layouts/partials/cards/past-project.html`
 - `layouts/partials/cards/accomplishments.html`
-- `layouts/partials/sections/interests.html`
 
 Use these when changing the rendered layout of custom sections. For ordinary content edits, prefer the YAML files under `data/en/sections`.
 

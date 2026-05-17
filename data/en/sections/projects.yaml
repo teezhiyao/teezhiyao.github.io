@@ -7,7 +7,7 @@ section:
   template: sections/projects.html
 
 title: "What I'm Building"
-description: Current projects and experiments
+description: Current side projects and technical experiments
 
 projects:
   - title: "Homelab & Self-Hosting"

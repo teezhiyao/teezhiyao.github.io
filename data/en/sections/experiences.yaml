@@ -72,4 +72,16 @@ experiences:
           - "Enhanced automation pipelines by customizing Jenkins configurations and creating modular reporting templates"
           - "Supported the transition from manual to automated testing, reducing manual testing effort by over 20%"
 
-# ADSC Internship moved to What I Did section
+  - company:
+      name: "Advanced Digital Sciences Center (ADSC)"
+      url: ""
+      location: "Singapore"
+      logo: ""
+      overview: "Research center focused on advanced digital technologies and software systems."
+    positions:
+      - designation: "Software Engineer Intern"
+        start: "May 2019"
+        end: "Aug 2019"
+        responsibilities:
+          - "Built an Eclipse plug-in for XSTAMPP implementing the STLSA safety engineering process"
+          - "Worked with safety engineering workflows and tooling for model-based analysis"

@@ -74,9 +74,7 @@ Files under `static/` are served from the site root. For example:
 
 The homepage sections are controlled by YAML files under `data/en/sections`. Section order comes from `section.weight`, and navbar visibility comes from `section.showOnNavbar`.
 
-Currently active sections include About, Experience, Education, What I'm Doing, Building, What I Did, Certifications, and Featured Posts.
-
-Some section files are disabled intentionally and kept as reusable drafts, including Skills, Learning, Interests, and Achievements.
+Currently active sections include About, Experience, Education, Now, Building, Past Projects, Certifications, and Featured Posts.
 
 ## Deployment
 

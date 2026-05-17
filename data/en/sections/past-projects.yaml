@@ -1,13 +1,13 @@
 section:
-  id: what-i-did
-  name: "What I Did"
+  id: past-projects
+  name: "Past Projects"
   enable: true
   weight: 6
   showOnNavbar: true
-  template: sections/what-i-did.html
+  template: sections/past-projects.html
 
-title: "What I Did"
-description: Assortment of old projects, experiences from the past
+title: "Past Projects"
+description: Completed side projects, coursework, competitions, and hackathons
 
 accomplishments:
   - name: "Connect X Reinforcement Learning"
@@ -65,17 +65,3 @@ accomplishments:
     summary: "Built an inventory management prototype with Raspberry Pi and Firebase."
     url: "/tags/sia-app-challenge/"
     icon: "fas fa-plane"
-
-  - name: "Exchange Programme"
-    issuer: "Hanyang University"
-    issuedDate: "Aug – Dec 2019"
-    summary: "Exchange semester in Seoul studying Data Mining, Big Data, and Applied ML."
-    url: "/tags/hanyang/"
-    icon: "fas fa-globe-asia"
-
-  - name: "Internship"
-    issuer: "Advanced Digital Sciences Center (ADSC)"
-    issuedDate: "May – Aug 2019"
-    summary: "Built an Eclipse plug-in implementing the STLSA safety engineering process."
-    url: "/tags/internship/"
-    icon: "fas fa-briefcase"

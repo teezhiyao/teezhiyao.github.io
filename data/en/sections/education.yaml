@@ -10,56 +10,73 @@ title: Education
 description: Academic background
 
 degrees:
-  - degree: "Master of Science in Computer Science"
+  - name: "Master of Science in Computer Science"
     institution:
       name: "Georgia Institute of Technology"
       url: "https://www.gatech.edu"
       logo: ""
       darkLogo: ""
     location: "Atlanta, GA (Online)"
-    date: "Jan 2024 – May 2027"
-    icon: "fas fa-graduation-cap"
-    gpa: "3.77 / 4.0"
-    courses:
-      - "CS 7641: Machine Learning"
-      - "CS 6476: Computer Vision"
-      - "CS 7637: Knowledge-Based AI"
-      - "CS 6601: AI for Robotics"
-      - "CS 6457: Video Game Design"
-      - "CS 8803: Game Theory"
-    extracurriculars:
-      - "OMSCS Student Advisory Committee Member (2024–2025)"
+    timeframe: "Jan 2024 – May 2027"
+    icon: "fa-graduation-cap"
+    # grade:
+    #   scale: "GPA"
+    #   achieved: "3.77"
+    #   outOf: "4.0"
+    takenCourses:
+      showGrades: false
+      collapseAfter: 6
+      courses:
+        - name: "CS 6601: Artificial Intelligence"
+        - name: "CS 6200: Graduate Introduction to Operating Systems"
+        - name: "CSE 6220: High Performance Computing"
+        - name: "CS 6290: High Performance Computer Architecture"
+        - name: "CS 7650: Natural Language"
+        - name: "CS 7632: Game AI"
+        - name: "CS 6340: Software Analysis and Test"
+        - name: "CS 8001: Seminar"
 
-  - degree: "Bachelor of Engineering in Engineering Product Development"
+  - name: "Bachelor of Engineering (Information Systems Technology and Design) with Honours with Merit"
     institution:
       name: "Singapore University of Technology and Design (SUTD)"
       url: "https://www.sutd.edu.sg"
       logo: ""
       darkLogo: ""
     location: "Singapore"
-    date: "May 2017 – Aug 2020"
-    icon: "fas fa-university"
-    gpa: "3.44 / 5.0"
-    courses:
-      - "Machine Learning"
-      - "Computational Data Science"
-      - "Software Engineering"
-      - "Computer Networks"
-      - "Artificial Intelligence"
-      - "Human-Computer Interaction"
-      - "Engineering Analytics"
-      - "Engineering Economics"
-
-  - degree: "Exchange Programme"
-    institution:
-      name: "Hanyang University"
-      url: "https://www.hanyang.ac.kr"
-      logo: ""
-      darkLogo: ""
-    location: "Seoul, South Korea"
-    date: "Aug 2019 – Dec 2019"
-    icon: "fas fa-globe-asia"
-    courses:
-      - "Data Mining"
-      - "Big Data Processing"
-      - "Applied Machine Learning"
+    timeframe: "May 2017 – Aug 2020"
+    icon: "fa-university"
+    # grade:
+    #   scale: "GPA"
+    #   achieved: "3.93"
+    #   outOf: "5.0"
+    takenCourses:
+      showGrades: false
+      collapseAfter: 8
+      courses:
+        # - name: "50.001: Introduction to Information Systems & Programming"
+        # - name: "50.002: Computation Structures"
+        # - name: "50.003: Elements of Software Construction"
+        # - name: "50.004: Introduction to Algorithms"
+        # - name: "50.005: Computer System Engineering"
+        # - name: "50.012: Networks"
+        - name: "50.021: Artificial Intelligence"
+        # - name: "50.034: Introduction to Probability & Statistics"
+        - name: "50.035: Computer Vision"
+        - name: "50.039: Theory and Practice of Deep Learning"
+        - name: "50.040: Natural Language Processing"
+        # - name: "50.043: Database Systems"
+        # - name: "40.240: Investment Science"
+        - name: "40.319: Statistical and Machine Learning"
+        # - name: "01.400 / 01.401: Capstone 1 & 2"
+        - name: "And more..."
+    customSections:
+      - name: "Minor"
+        content: "Artificial Intelligence"
+      - name: "Specialization"
+        content: "Financial Technology"
+      # - name: "Award"
+      #   content: "EPS Computer Systems AI Award"
+      - name: "Exchange"
+        content: "[Hanyang University](https://www.hanyang.ac.kr), Seoul, South Korea (Aug 2019 – Dec 2019). Transfer credits included Investment Science, Networks, Database Systems, and HASS mapping subjects."
+      # - name: "Selected Coursework"
+      #   content: "The courses listed above are selected core and specialization-relevant courses, not an exhaustive transcript."

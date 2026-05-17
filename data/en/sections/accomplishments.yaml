@@ -34,8 +34,8 @@ accomplishments:
     url: ""
     icon: "fas fa-microchip"
 
-  - name: "Data Scientist Track"
-    issuedDate: "2020"
-    issuer: "SUTD"
-    url: ""
-    icon: "fas fa-chart-line"
+  # - name: "Data Scientist Track"
+  #   issuedDate: "2020"
+  #   issuer: "SUTD"
+  #   url: ""
+  #   icon: "fas fa-chart-line"
