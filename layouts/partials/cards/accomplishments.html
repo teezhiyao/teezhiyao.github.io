@@ -1,0 +1,24 @@
+<div class="col-xs-12 col-sm-6 col-lg-4 p-2">
+  <div class="card mt-3 h-100">
+    <div class="card-header d-flex align-items-center">
+      {{ if .icon }}
+        <span class="{{ .icon }} me-2"></span>
+      {{ end }}
+      <h6 class="card-title mb-0">{{ .name }}</h6>
+    </div>
+    <div class="card-body py-2">
+      <div class="text-muted small">
+        {{ if .issuer }}<div>{{ .issuer }}</div>{{ end }}
+        {{ if .issuedDate }}<div>{{ .issuedDate }}</div>{{ end }}
+      </div>
+      {{ if .summary }}
+        <p class="card-text small mt-2 mb-0">{{ .summary | markdownify }}</p>
+      {{ end }}
+    </div>
+    {{ if .url }}
+      <div class="card-footer text-end p-1 pe-2">
+        <a href="{{ .url }}" class="small" target="_blank" rel="noopener">Related posts →</a>
+      </div>
+    {{ end }}
+  </div>
+</div>
