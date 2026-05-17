@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+hugo_bin="$repo_root/.tools/hugo/hugo.exe"
+
+if [[ ! -x "$hugo_bin" ]]; then
+  echo "Hugo is not installed at .tools/hugo/hugo.exe." >&2
+  echo "Install Hugo Extended 0.146.5, or run from PowerShell:" >&2
+  echo "  Invoke-WebRequest -Uri https://github.com/gohugoio/hugo/releases/download/v0.146.5/hugo_extended_0.146.5_windows-amd64.zip -OutFile \$env:TEMP\\hugo.zip" >&2
+  exit 1
+fi
+
+export HUGO_CACHEDIR="${HUGO_CACHEDIR:-$repo_root/.tools/hugo-cache}"
+exec "$hugo_bin" "$@"

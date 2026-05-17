@@ -5,7 +5,7 @@ categories: [exchange]
 tags: [documentation, korea, hanyang]
 ---
 
-![header image](/assets/images/hanyang-1.jpg)
+![header image](/assets/hanyang-1.jpg)
 
 Exchange!!! Consolidated some information which might be useful for those going to hanyang for exchange in the future.
 

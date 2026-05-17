@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+version="${1:-0.146.5}"
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+install_dir="$repo_root/.tools/hugo"
+zip_name="hugo_extended_${version}_windows-amd64.zip"
+url="https://github.com/gohugoio/hugo/releases/download/v${version}/${zip_name}"
+
+mkdir -p "$install_dir"
+
+if command -v cygpath >/dev/null 2>&1; then
+  zip_path="$(cygpath -w "$install_dir/$zip_name")"
+  dest_path="$(cygpath -w "$install_dir")"
+else
+  zip_path="$install_dir/$zip_name"
+  dest_path="$install_dir"
+fi
+
+echo "Downloading Hugo Extended ${version}..."
+if command -v curl >/dev/null 2>&1; then
+  curl --fail --location --output "$install_dir/$zip_name" "$url"
+else
+  powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri '$url' -OutFile '$zip_path'"
+fi
+
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "Expand-Archive -LiteralPath '$zip_path' -DestinationPath '$dest_path' -Force"
+rm -f "$install_dir/$zip_name"
+
+"$install_dir/hugo.exe" version

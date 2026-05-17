@@ -5,7 +5,7 @@ categories: [hackathons]
 tags: [documentation, iot, predix]
 ---
 
-![header image](/assets/images/predix-header.png)
+![header image](/assets/predix-header.png)
 
 The Digital Predix Hackathon was held from July 2018 until 20th Sep 2018. Together with [Jin Kind](https://hojinkind.github.io/predix_article.html) and Ryan, we joined the hackathon as Ventus and came out as the winner in the renewable catagory.
 
@@ -18,7 +18,7 @@ In the first month, we went through the Predix Developer Boot Camp to learn abou
 
 Through the hackathon, I got to learn more about industrial IoT and renewables from experts in those fields. Through the app development using the platform, I learnt about things such as APIs (using postman), microservices and predictive analytics.
 
-![Picture with the Team](/assets/images/predix-1.jpg)
+![Picture with the Team](/assets/predix-1.jpg)
 Ryan, myself & Jin Kind
 
 Special thanks to Harsh & Jessie from GE for being very helpful throughout the entire hackathon  
