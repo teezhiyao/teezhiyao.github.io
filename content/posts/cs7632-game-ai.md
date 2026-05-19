@@ -4,7 +4,7 @@ description: "Spring 2026 OMSCS course reflection — implementing path networks
 date: 2026-05-19
 categories: [omscs, academics]
 tags: [cs7632, game-ai, unity, csharp, gtech, omscs]
-draft: true
+draft: false
 ---
 
 Coming soon — full reflection on CS7632 Game AI.

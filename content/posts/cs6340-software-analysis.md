@@ -4,7 +4,7 @@ description: "Spring 2026 OMSCS course reflection — LLVM passes, dataflow anal
 date: 2026-05-19
 categories: [omscs, academics]
 tags: [cs6340, software-analysis, llvm, gtech, omscs]
-draft: true
+draft: false
 ---
 
 Coming soon — full reflection on CS6340 Software Analysis.

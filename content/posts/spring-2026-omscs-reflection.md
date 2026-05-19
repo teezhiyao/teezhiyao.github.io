@@ -3,7 +3,7 @@ title: "Spring 2026 OMSCS — Game AI & Software Analysis"
 date: 2026-05-19
 categories: [omscs, academics]
 tags: [cs7632, cs6340, game-ai, software-analysis, gtech, omscs]
-draft: true
+draft: false
 ---
 
 Spring 2026 was a two-course semester. Coming into it, I knew it'd be a stretch — Game AI on the creative side, Software Analysis on the formal side — but I wanted to see how they'd play off each other while balancing a full-time QA role. Turned out they complemented each other better than I expected.
