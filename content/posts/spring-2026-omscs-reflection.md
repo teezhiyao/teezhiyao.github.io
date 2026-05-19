@@ -71,4 +71,4 @@ If I had any advice for someone considering this pair: take them in the same sem
 
 I kept lighter notes this semester than I'd have liked — too much time in the code, not enough in the markdown. For future courses I want to be more disciplined about maintaining reference notes as assignments progress, so the reflection writes itself.
 
-For now, the summarized notes live in `Hermes/Notes/OMSCS/` in the vault.
+*This post was summarized from course notes and materials with AI assistance.*
