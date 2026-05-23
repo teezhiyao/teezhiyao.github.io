@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hermes-Agent on Tee Zhi Yao</title><link>https://teezhiyao.github.io/tags/hermes-agent/</link><description>Recent content in Hermes-Agent on Tee Zhi Yao</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://teezhiyao.github.io/tags/hermes-agent/feed.xml" rel="self" type="application/rss+xml"/><item><title>Multi-Profile Telegram Bot Setup with Hermes Agent and Obsidian</title><link>https://teezhiyao.github.io/posts/multi-profile-telegram-bot-setup-with-hermes-agent-and-obsidian/</link><pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/posts/multi-profile-telegram-bot-setup-with-hermes-agent-and-obsidian/</guid><description>&lt;p>This post documents my setup: a Hermes Agent running on a Raspberry Pi with multiple Telegram bot profiles, each assigned to its own topic within a single supergroup. The entire system integrates with an Obsidian vault for persistent note storage and git-backed sync.&lt;/p>
+&lt;h2 id="hardware-foundation">Hardware Foundation&lt;/h2>
+&lt;p>&lt;strong>Raspberry Pi 4&lt;/strong> running Raspberry Pi OS Lite (no desktop):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># After flashing Pi OS Lite to SD card, enable SSH before first boot&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>touch /bootfs/ssh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># First login&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ssh pi@&amp;lt;ip-address&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo raspi-config
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># → Interface Options → SSH: Enable&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># → Localisation → Timezone: Asia/Singapore&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Static IP via router DHCP reservation recommended for reliable access&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Essential packages:&lt;/p></description></item></channel></rss>

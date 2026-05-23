@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Certification on Tee Zhi Yao</title><link>https://teezhiyao.github.io/tags/certification/</link><description>Recent content in Certification on Tee Zhi Yao</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://teezhiyao.github.io/tags/certification/feed.xml" rel="self" type="application/rss+xml"/><item><title>AWS Certified Cloud Practitioner</title><link>https://teezhiyao.github.io/notes/aws-certified-cloud-practitioner/</link><pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/notes/aws-certified-cloud-practitioner/</guid><description>&lt;div style="height:270px; width:150px;background-color:Silver">
+&lt;div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bbc12013-be20-42f8-a2e3-2b2ef25c25d8" data-share-badge-host="https://www.credly.com">&lt;/div>&lt;script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js">&lt;/script>
+&lt;/div>
+&lt;h2 id="preparation">Preparation&lt;/h2>
+&lt;p>Started preparing for the certification on the 2nd week of January and took the exam on 1st February. Went through a ~14 hour long udemy course, alongside with the 6 additional practice exam.
+Result: 820 (82%)&lt;/p>
+&lt;h2 id="thoughts">Thoughts&lt;/h2>
+&lt;h3 id="udemy-course-review">Udemy Course review&lt;/h3>
+&lt;p>The Udemy course by Stephane Maarek covered a wide variety of AWS services and contain quite a large amount of details. The content of the course goes beyond the certification and it serves as a very good introduction to AWS services. On the same note, a good portion of the content/details are not necessarily useful for the exam.&lt;/p></description></item></channel></rss>

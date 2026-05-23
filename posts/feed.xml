@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Tee Zhi Yao</title><link>https://teezhiyao.github.io/posts/</link><description>Recent content in Posts on Tee Zhi Yao</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://teezhiyao.github.io/posts/feed.xml" rel="self" type="application/rss+xml"/><item><title>Spring 2026 OMSCS — Game AI &amp; Software Analysis</title><link>https://teezhiyao.github.io/posts/spring-2026-omscs-game-ai-software-analysis/</link><pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/posts/spring-2026-omscs-game-ai-software-analysis/</guid><description>&lt;p>Spring 2026 was a two-course semester. Coming into it, I knew it&amp;rsquo;d be a stretch — Game AI on the creative side, Software Analysis on the formal side — but I wanted to see how they&amp;rsquo;d play off each other while balancing a full-time QA role. Turned out they complemented each other better than I expected.&lt;/p>
+&lt;hr>
+&lt;h2 id="cs7632--game-ai">CS7632 — Game AI&lt;/h2>
+&lt;p>Game AI is fundamentally different from academic AI. You&amp;rsquo;re not trying to prove optimality or solve an intractable problem in the general case — you&amp;rsquo;re making a player have a good time. That means cutting corners, embracing approximations, and yes, cheating when the player won&amp;rsquo;t notice. The entire course is built around this philosophy.&lt;/p></description></item><item><title>2026 April Races: 2XU and INCO Reflections</title><link>https://teezhiyao.github.io/posts/2026-april-races-2xu-and-inco-reflections/</link><pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/posts/2026-april-races-2xu-and-inco-reflections/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This year, I completed two races in April 2026: the 2XU race and the INCO race. Both were meaningful milestones in my fitness journey and taught me valuable lessons about pacing, resilience, and sustainable running.&lt;/p>
+&lt;h2 id="2xu-race">2XU Race&lt;/h2>
+&lt;p>&lt;strong>Date &amp;amp; Details:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Date: [Fill in]&lt;/li>
+&lt;li>Distance: [Fill in]&lt;/li>
+&lt;li>Finish Time: [Fill in]&lt;/li>
+&lt;li>Key Experience: [Add reflection]&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Takeaways:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>[Reflection point 1]&lt;/li>
+&lt;li>[Reflection point 2]&lt;/li>
+&lt;li>[Reflection point 3]&lt;/li>
+&lt;/ul>
+&lt;h2 id="inco-race">INCO Race&lt;/h2>
+&lt;p>&lt;strong>Date &amp;amp; Details:&lt;/strong>&lt;/p></description></item><item><title>Multi-Profile Telegram Bot Setup with Hermes Agent and Obsidian</title><link>https://teezhiyao.github.io/posts/multi-profile-telegram-bot-setup-with-hermes-agent-and-obsidian/</link><pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/posts/multi-profile-telegram-bot-setup-with-hermes-agent-and-obsidian/</guid><description>&lt;p>This post documents my setup: a Hermes Agent running on a Raspberry Pi with multiple Telegram bot profiles, each assigned to its own topic within a single supergroup. The entire system integrates with an Obsidian vault for persistent note storage and git-backed sync.&lt;/p>
+&lt;h2 id="hardware-foundation">Hardware Foundation&lt;/h2>
+&lt;p>&lt;strong>Raspberry Pi 4&lt;/strong> running Raspberry Pi OS Lite (no desktop):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># After flashing Pi OS Lite to SD card, enable SSH before first boot&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>touch /bootfs/ssh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># First login&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ssh pi@&amp;lt;ip-address&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo raspi-config
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># → Interface Options → SSH: Enable&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># → Localisation → Timezone: Asia/Singapore&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Static IP via router DHCP reservation recommended for reliable access&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Essential packages:&lt;/p></description></item></channel></rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tee Zhi Yao</title><link>https://teezhiyao.github.io/</link><description>Recent content on Tee Zhi Yao</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://teezhiyao.github.io/feed.xml" rel="self" type="application/rss+xml"/><item><title>Spring 2026 OMSCS — Game AI &amp; Software Analysis</title><link>https://teezhiyao.github.io/posts/spring-2026-omscs-game-ai-software-analysis/</link><pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/posts/spring-2026-omscs-game-ai-software-analysis/</guid><description>&lt;p>Spring 2026 was a two-course semester. Coming into it, I knew it&amp;rsquo;d be a stretch — Game AI on the creative side, Software Analysis on the formal side — but I wanted to see how they&amp;rsquo;d play off each other while balancing a full-time QA role. Turned out they complemented each other better than I expected.&lt;/p>
+&lt;hr>
+&lt;h2 id="cs7632--game-ai">CS7632 — Game AI&lt;/h2>
+&lt;p>Game AI is fundamentally different from academic AI. You&amp;rsquo;re not trying to prove optimality or solve an intractable problem in the general case — you&amp;rsquo;re making a player have a good time. That means cutting corners, embracing approximations, and yes, cheating when the player won&amp;rsquo;t notice. The entire course is built around this philosophy.&lt;/p></description></item><item><title>2026 April Races: 2XU and INCO Reflections</title><link>https://teezhiyao.github.io/posts/2026-april-races-2xu-and-inco-reflections/</link><pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/posts/2026-april-races-2xu-and-inco-reflections/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This year, I completed two races in April 2026: the 2XU race and the INCO race. Both were meaningful milestones in my fitness journey and taught me valuable lessons about pacing, resilience, and sustainable running.&lt;/p>
+&lt;h2 id="2xu-race">2XU Race&lt;/h2>
+&lt;p>&lt;strong>Date &amp;amp; Details:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Date: [Fill in]&lt;/li>
+&lt;li>Distance: [Fill in]&lt;/li>
+&lt;li>Finish Time: [Fill in]&lt;/li>
+&lt;li>Key Experience: [Add reflection]&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Takeaways:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>[Reflection point 1]&lt;/li>
+&lt;li>[Reflection point 2]&lt;/li>
+&lt;li>[Reflection point 3]&lt;/li>
+&lt;/ul>
+&lt;h2 id="inco-race">INCO Race&lt;/h2>
+&lt;p>&lt;strong>Date &amp;amp; Details:&lt;/strong>&lt;/p></description></item><item><title>Multi-Profile Telegram Bot Setup with Hermes Agent and Obsidian</title><link>https://teezhiyao.github.io/posts/multi-profile-telegram-bot-setup-with-hermes-agent-and-obsidian/</link><pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/posts/multi-profile-telegram-bot-setup-with-hermes-agent-and-obsidian/</guid><description>&lt;p>This post documents my setup: a Hermes Agent running on a Raspberry Pi with multiple Telegram bot profiles, each assigned to its own topic within a single supergroup. The entire system integrates with an Obsidian vault for persistent note storage and git-backed sync.&lt;/p>
+&lt;h2 id="hardware-foundation">Hardware Foundation&lt;/h2>
+&lt;p>&lt;strong>Raspberry Pi 4&lt;/strong> running Raspberry Pi OS Lite (no desktop):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># After flashing Pi OS Lite to SD card, enable SSH before first boot&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>touch /bootfs/ssh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># First login&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ssh pi@&amp;lt;ip-address&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo raspi-config
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># → Interface Options → SSH: Enable&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># → Localisation → Timezone: Asia/Singapore&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Static IP via router DHCP reservation recommended for reliable access&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Essential packages:&lt;/p></description></item><item><title>AWS Certified Cloud Practitioner</title><link>https://teezhiyao.github.io/notes/aws-certified-cloud-practitioner/</link><pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/notes/aws-certified-cloud-practitioner/</guid><description>&lt;div style="height:270px; width:150px;background-color:Silver">
+&lt;div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bbc12013-be20-42f8-a2e3-2b2ef25c25d8" data-share-badge-host="https://www.credly.com">&lt;/div>&lt;script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js">&lt;/script>
+&lt;/div>
+&lt;h2 id="preparation">Preparation&lt;/h2>
+&lt;p>Started preparing for the certification on the 2nd week of January and took the exam on 1st February. Went through a ~14 hour long udemy course, alongside with the 6 additional practice exam.
+Result: 820 (82%)&lt;/p>
+&lt;h2 id="thoughts">Thoughts&lt;/h2>
+&lt;h3 id="udemy-course-review">Udemy Course review&lt;/h3>
+&lt;p>The Udemy course by Stephane Maarek covered a wide variety of AWS services and contain quite a large amount of details. The content of the course goes beyond the certification and it serves as a very good introduction to AWS services. On the same note, a good portion of the content/details are not necessarily useful for the exam.&lt;/p></description></item><item><title>Hanyang Exchange - Pre-departure</title><link>https://teezhiyao.github.io/notes/hanyang-exchange-pre-departure/</link><pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/notes/hanyang-exchange-pre-departure/</guid><description>&lt;p>&lt;img src="https://teezhiyao.github.io/assets/hanyang-1.jpg" alt="header image">&lt;/p>
+&lt;p>Exchange!!! Consolidated some information which might be useful for those going to hanyang for exchange in the future.&lt;/p>
+&lt;h3 id="housing">Housing&lt;/h3>
+&lt;p>To understand more about housing in Korea, this &lt;a href="https://blog.goshipages.com/housing-faq-ff5f15c7e3a7#.b0dbhd5po" target="_blank" rel="noopener">article&lt;/a> provides good information on the different types of housings in Korea. We opted for housing outside as dormitory are not guaranteed.
+I found the housings for those of us going to hanyang from this site called &lt;a href="https://goshipages.com/" target="_blank" rel="noopener">goshipages&lt;/a>. We will be staying at a place called cozytel near hanyang.&lt;/p></description></item><item><title>Internship - ADSC</title><link>https://teezhiyao.github.io/notes/internship-adsc/</link><pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/notes/internship-adsc/</guid><description>&lt;p>&lt;img src="https://teezhiyao.github.io/assets/full_1002845.jpg" alt="header image">&lt;/p>
+&lt;p>During Summer 2019, I embarked on a 16-week internship at Advanced Digital Sciences Center (ADSC) as a Junior Research Assistant.
+I developed an eclipse plug-in for XSTAMPP which implements the STLSA process. &lt;a href="https://github.com/SE-Stuttgart/XSTAMPP" target="_blank" rel="noopener">XSTAMPP (eXtensible STAMP Platform) is an open-source platform for safety engineering&lt;/a>. STLSA Process is a safety engineering model.&lt;/p></description></item><item><title>CDDC2019 - Brainhack</title><link>https://teezhiyao.github.io/notes/cddc2019-brainhack/</link><pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/notes/cddc2019-brainhack/</guid><description>&lt;p>&lt;img src="https://teezhiyao.github.io/assets/CDDC2019.jpg" alt="header image">&lt;/p>
+&lt;p>Cyber Defender Discovery Camp (CDDC) is a Cyber Security Event organised by the Defence Science and Technology Agency (DSTA).&lt;/p>
+&lt;h3 id="about-the-event">About the event&lt;/h3>
+&lt;p>The programme started with a 3 weeks online training on immersive labs followed by an online qualifier for the finals.&lt;/p></description></item><item><title>Digital Predix Hackathon 2018</title><link>https://teezhiyao.github.io/notes/digital-predix-hackathon-2018/</link><pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate><guid>https://teezhiyao.github.io/notes/digital-predix-hackathon-2018/</guid><description>&lt;p>&lt;img src="https://teezhiyao.github.io/assets/predix-header.png" alt="header image">&lt;/p>
+&lt;p>The Digital Predix Hackathon was held from July 2018 until 20th Sep 2018. Together with &lt;a href="https://hojinkind.github.io/predix_article.html" target="_blank" rel="noopener">Jin Kind&lt;/a> and Ryan, we joined the hackathon as Ventus and came out as the winner in the renewable catagory.&lt;/p>
+&lt;h3 id="about-the-hackathon">About the hackathon&lt;/h3>
+&lt;p>In the first month, we went through the Predix Developer Boot Camp to learn about the &lt;a href="https://www.ge.com/digital/iiot-platform" target="_blank" rel="noopener">predix platform&lt;/a>. After the training, we were given a month to work on an application using the microservices on the predix platform. Using relevant data, we used analytics services to come up with a prediction model that is displayed on a predix UI that is created.
+&lt;a href="https://github.com/ryan-gr/predix-renewable/tree/master/Ventus-nodejs" target="_blank" rel="noopener">Github Repo&lt;/a>&lt;/p></description></item></channel></rss>
