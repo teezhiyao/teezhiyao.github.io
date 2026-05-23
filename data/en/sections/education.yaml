@@ -2,7 +2,7 @@ section:
   id: education
   name: "Education"
   enable: true
-  weight: 3
+  weight: 4
   showOnNavbar: true
   template: sections/education.html
 

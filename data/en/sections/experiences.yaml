@@ -2,7 +2,7 @@ section:
   id: experiences
   name: "Experience"
   enable: true
-  weight: 2
+  weight: 3
   showOnNavbar: true
   template: sections/experiences.html
 

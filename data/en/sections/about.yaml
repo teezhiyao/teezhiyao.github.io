@@ -7,17 +7,17 @@ section:
   template: sections/about.html
 
 title: About Me
-description: QA Engineer | OMSCS Student | Homelab Enthusiast
+description: QA Engineer | Systems Thinker | Builder 
 
 summary: |
-  I'm a QA/Performance Testing Engineer with a passion for automation, AI, and building things. Currently pursuing a Master's degree in Computer Science at Georgia Tech while working on side projects ranging from self-hosted infrastructure to personal automation pipelines. I believe in continuous learning, documenting my journey, and building systems that solve real problems—all pursued with intention and balance. Everything I do is anchored by "적당히 하" (doing things in moderation), a philosophy of purposefulness and equilibrium.
+  I’m a QA Engineer with a strong eye for detail, precision, and system reliability. Beyond testing, I enjoy building things—from self-hosted infrastructure to personal automation pipelines—and understanding how systems work end to end. Currently, I’m pursuing a Master’s degree in Computer Science at Georgia Institute of Technology while exploring side projects across software engineering, automation, and infrastructure. I believe in continuous learning, documenting my journey, and building systems that solve real problems. This year, I’ve been guided by the theme of doing things in moderation — pursuing growth with intention, moderation, and balance.
 
 sections:
   - type: "timeline"
     items:
       - title: "Current Role"
         subtitle: "AXS Pte Ltd"
-        description: "QA/Performance Testing Engineer working on payment systems, loyalty/rewards platforms, and merchant portals."
+        description: "QA Engineer working on payment systems, loyalty/rewards platforms, and merchant portals."
         icon: "fas fa-briefcase"
 
       - title: "Education"
