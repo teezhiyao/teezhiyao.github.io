@@ -22,6 +22,13 @@ Game AI is fundamentally different from academic AI. You're not trying to prove 
 
 **Pathfinding** tied it together — running search algorithms over the generated network to move agents from point A to B. This is where **A*** and heuristic search concepts came to life. The interesting bit wasn't the algorithm itself (it's textbook) — it was the engineering choices around it: how coarse should your grid be? How do you clean up paths to look natural instead of robotic? When is good-enough better than optimal?
 
+### Personal Takeaways
+
+The assignments were the highlight — genuinely well-designed. Each one had a **properly gated structure**: an easy warm-up to get oriented, a meaty core, then a hard optimization stretch where you could go absolutely nuts. There's real room for people who want to obsess over performance, and I respect that the course doesn't clip your wings.
+
+- **Dodgeball** and **racetrack** were my favourites. Dodgeball because the AI decision-making under uncertainty maps directly to real gameplay. Racetrack because it's A* with a twist — velocity state makes the search space way more interesting.
+- The **final terrain design** assignment was a different beast — creative, almost architectural. I can see someone with an artsier bent loving that one. My own output was more of a "prove I understood the course concepts" exercise than anything beautiful.
+
 ### Concepts That Stuck
 
 - **Heuristic ≠ hack.** A well-designed heuristic makes pathfinding tractable. A poorly designed one makes agents look stupid.
@@ -47,6 +54,12 @@ This was the formal counterpart — learning how to automatically discover usefu
 **Dataflow Analysis** was the deepest piece — implementing **reaching definitions** and **live variable analysis** on control-flow graphs. The concept: **static analysis as fixed-point computation**. You start with optimistic assumptions, propagate facts through the CFG, and iterate until nothing changes. Soundness means you may report facts that can't occur (false positives), but you won't miss real ones.
 
 The pointer analysis material (allocation-site vs. type-based heap abstraction, flow sensitivity) tied back to the real world — understanding why Coverity or Infer report what they do requires knowing where they sit on the soundness-completeness axis.
+
+### Personal Takeaways
+
+This module was manageable — partly because my day job is QA/performance testing, so the core concepts (test generation, coverage, mutation analysis) were familiar ground. The concepts clicked faster having worked with them in practice.
+
+**Compiler-level instrumentation** was the standout. Writing LLVM passes to instrument IR at compile time opened my eyes to a layer of testing I'd never touched. It honestly made me consider taking the Compilers module (CS 6241) — though I'm not sure it'll fit into my remaining course slots. If you're a testing person and you've never seen how AddressSanitizer works under the hood, this module gives you that picture.
 
 ### Concepts That Stuck
 

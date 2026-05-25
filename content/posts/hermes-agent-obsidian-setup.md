@@ -1,6 +1,6 @@
 ---
 title: "Multi-Profile Telegram Bot Setup with Hermes Agent and Obsidian"
-date: 2025-05-16
+date: 2026-05-24
 categories: [setup, automation, homelab]
 tags: [hermes-agent, obsidian, raspberry-pi, telegram, git, multi-agent]
 ---
@@ -82,33 +82,28 @@ Add a line to run every 30 minutes:
 
 Adjust the interval based on your needs — every 15 minutes for active writing, hourly for casual use. Note that frequent writes can wear out SD cards on a Pi, so consider running sync on a schedule that balances freshness with longevity.
 
-### Syncing on Android (Termux + Obsidian Git)
+### Syncing on Android (GitSync App)
 
-To sync your Obsidian vault on an Android device:
+The **Obsidian Git** community plugin is not stable on mobile. Instead, use the **GitSync app** for regular syncing:
 
-1. **Install Termux** from F-Droid (recommended over the Play Store version — it's more up to date)
-2. **Install dependencies:**
-   ```bash
-   pkg update && pkg install git openssh
-   ```
-3. **Set up SSH keys** (same keys you use on other devices):
-   ```bash
-   ssh-keygen -t rsa -b 4096
-   cat ~/.ssh/id_rsa.pub
-   ```
-   Add the public key to GitHub under Settings → SSH and GPG keys.
-4. **Clone the vault:**
-   ```bash
-   git clone --recurse-submodules git@github.com:teezhiyao/obsidian.git ~/storage/shared/Obsidian
-   ```
-5. **Grant storage permissions:**
-   ```bash
-   termux-setup-storage
-   ```
-   This makes your vault accessible from Obsidian on Android.
-6. **Install Obsidian Git plugin** — Open Obsidian, go to Settings → Community plugins → Browse, search for "Obsidian Git". Configure it to run the backup/push on a schedule (e.g. every 60 minutes) or manually via command palette.
+1. Install [GitSync](https://play.google.com/store/apps/details?id=com.bug.huginn.gitsync) from the Play Store
+2. Configure it with your GitHub SSH keys and repo URL
+3. Set a sync schedule (e.g. every 30–60 minutes)
+4. It handles pull, commit, and push automatically
 
-The combination of Termux for the git backend and the Obsidian Git plugin for the UI means your Android device stays in sync with the same vault — write a note on your phone during a commute, and it's on your Pi by the time you're home.
+This keeps your vault files synced without relying on any Obsidian plugin — GitSync works at the filesystem level.
+
+### Syncing on PC (Obsidian Git Plugin)
+
+On desktop, the **Obsidian Git** community plugin is stable and recommended:
+
+1. Open Obsidian → Settings → Community plugins → Browse
+2. Search for "Obsidian Git" and install
+3. Configure it to run backup/push on a schedule (e.g. every 60 minutes) or manually via command palette
+
+### Alternative: Obsidian Sync
+
+Instead of git-based syncing, [Obsidian Sync](https://obsidian.md/sync) is an official subscription service that syncs your vault end-to-end encrypted across all devices. It's a simpler setup with no SSH keys, git repos, or third-party apps to manage — at the cost of a monthly subscription, and it keeps your notes off GitHub entirely if that's a concern.
 
 ## Multi-Profile Telegram Bot Setup
 
@@ -326,6 +321,64 @@ Obsidian (any device) → git commit + push → GitHub → RPi sync script → l
 ```
 
 The RPi sync script pulls changes hourly on manual trigger. The sync script also commits and pushes any changes Hermes makes to the vault (notes, task updates, etc.).
+
+## Using Cronjobs: Eisenhower Matrix Task Management
+
+The agent can be scheduled to check in on your Eisenhower Matrix daily, keeping tasks current without manual overhead.
+
+The matrix lives at `Hermes/Notes/Eisenhower-Matrix.md` in the vault with four quadrants (Q1–Q4), a backlog section, and separate **👔 WORK** / **🧑 PERSONAL** domains. Completed items auto-archive to `Completed-Task-Tracking.md` at week end.
+
+### Creating the Cronjob
+
+```bash
+hermes cron create \
+  --schedule "0 18 * * 1-5" \
+  --name "Eisenhower Check-in" \
+  --prompt "Read 📊 Hermes/Notes/Eisenhower-Matrix.md from the obsidian vault. Review the matrix, check what's due, then ask me: what I accomplished today, what's pending, and what to promote from the backlog into active quadrants. Update the file with my changes and the new 'Last updated' date."
+```
+
+The cronjob runs at 6 PM on weekdays. The agent reads the matrix, asks what's done or new, and writes updates back — moving ✅ items to Done, promoting backlog tasks, and adjusting dates.
+
+### Manual Usage
+
+In any agent session, just say:
+```
+Check 📊 Eisenhower-Matrix.md in the vault for today's priorities.
+```
+
+## Blog Content Management via Agent
+
+The Hermes Agent doubles as a content assistant. The **blog profile** bot (topic-restricted in the supergroup) handles blog writing and editing, but any profile can help draft and manage content since they all share the vault.
+
+### How It Works
+
+Blog posts live at `Hermes/Personal/Blog/content/posts/` as markdown files with Hugo frontmatter:
+
+```markdown
+---
+title: "Post Title"
+date: 2025-05-16
+categories: [category]
+tags: [tag1, tag2]
+---
+```
+
+Draft material goes in `Hermes/Personal/Blog/drafts/` — ideas, outlines, and in-progress writing. When a draft is ready, the agent can:
+
+- Expand a draft outline into a full post
+- Format frontmatter correctly for Hugo/Toha
+- Suggest tags and categories based on existing posts
+- Stage the file in `content/posts/`
+- Commit and push to the blog's standalone git repo for GitHub Pages deployment
+
+### Example Workflow
+
+1. Drop a note or idea in `drafts/Draft-Info.md`
+2. Ask the agent: *"Turn the Eisenhower Matrix draft into a section in the Multi-Profile post"*
+3. The agent reads the draft, formats it properly, and inserts it into the right post file
+4. Agent commits the change and pushes to the blog repo
+
+This turns the agent into a lightweight editorial assistant — capture ideas any time, and let the bot handle formatting and publishing.
 
 ## Key Commands Reference
 
