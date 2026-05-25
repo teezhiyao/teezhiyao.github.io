@@ -14,17 +14,17 @@ summary: |
 
 principles:
   - title: "When you fail to plan, you plan to fail"
-    description: "I try to plan deliberately; without planning, avoidable failure is more likely."
+    url: "/posts/guiding-principles/#when-you-fail-to-plan-you-plan-to-fail"
   - title: "Everything has a trade-off"
-    description: "I try to stay aware that every choice has opportunity cost, and I aim to make intentional decisions based on what matters most."
+    url: "/posts/guiding-principles/#everything-has-a-trade-off"
   - title: "Be in the arena (The Man in the Arena)"
-    description: "I try to favour action over passive observation—those who try and risk failure often learn the most."
+    url: "/posts/guiding-principles/#be-in-the-arena-the-man-in-the-arena"
   - title: "Communication builds trust"
-    description: "I strive for clear, honest communication — listening and respectful responses build mutual trust."
+    url: "/posts/guiding-principles/#communication-builds-trust"
   - title: "Vulnerability is strength"
-    description: "I aim to be open about uncertainty or mistakes because that enables learning and real connection."
+    url: "/posts/guiding-principles/#vulnerability-is-strength"
   - title: "Practice consistency and empathy"
-    description: "I try to act in alignment with my values, treat people fairly, and avoid double standards."
+    url: "/posts/guiding-principles/#practice-consistency-and-empathy"
 
 sections:
   - type: "timeline"
