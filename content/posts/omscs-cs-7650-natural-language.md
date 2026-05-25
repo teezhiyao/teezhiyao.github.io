@@ -7,7 +7,7 @@ tags: [omscs, georgia-tech, cs-7650, natural-language-processing]
 description: "My reflection on NLP — from probability foundations to Transformers."
 ---
 
-Taking Natural Language Processing in Fall 2025 was a full-circle moment for me. I'd taken a similar course during undergrad, but this time around — with a few years of work experience and several other OMSCS courses under my belt — I had a much better sense of where these techniques actually matter.
+Taking Natural Language Processing in Fall 2025 was a mixed experience. I'd taken a similar course during undergrad, and there was significant overlap — enough that a good portion of the material felt like revisiting ground I'd already covered. That said, the deeper dive into Transformers and attention mechanisms was new and genuinely useful.
 
 ## Course Snapshot
 
@@ -16,7 +16,6 @@ Taking Natural Language Processing in Fall 2025 was a full-circle moment for me.
 | **Course** | CS 7650 Natural Language |
 | **Term** | Fall 2025 |
 | **Credits** | 3 |
-| **Grade** | B |
 
 ## Why I Took It
 
@@ -37,6 +36,8 @@ The second half of the course surveyed applied NLP tasks: classical information 
 The assignments spanned the full pipeline of NLP system design. One focused on building a text classification system — feature engineering with Bag-of-Words, implementing Naive Bayes and logistic regression from scratch, then comparing against a neural approach. Another centred on language modelling: building an n-gram model with smoothing, implementing perplexity calculation, and seeing how model size affects fluency.
 
 The later assignments shifted to modern architectures — implementing attention mechanisms and working with pre-trained Transformer models for downstream tasks like summarization and question answering. One project involved building a retriever-reader pipeline for open-domain QA, which tied together everything from information retrieval to neural reading comprehension.
+
+That said, I found the assignments poorly designed overall. They tended to test a narrow band of understanding — mostly implementation recall rather than deeper reasoning, analysis, or design. There wasn't much variation in difficulty or in the type of thinking required, which made the course feel flat compared to others in the program. A course covering such a broad field should have assignments that challenge different levels of understanding, and this one didn't deliver on that front.
 
 ## Concepts That Stuck
 
@@ -62,16 +63,7 @@ The workload was manageable but steady. Weekly lectures with associated readings
 
 ## Takeaways
 
-NLP is a field in rapid transition. The classical material (information retrieval, n-gram models, feature engineering) provides essential context, but the course spends the majority of its time on neural approaches because that's where the field has moved. Walking out with a solid grasp of Transformers, attention, and the retriever-reader paradigm has made me much more literate when reading about modern LLMs, RAG systems, and agent architectures.
-
-The B grade reflects the reality of balancing this with work and life — the material was solid, but I didn't have the bandwidth to push into A territory. I'm still glad I took it.
-
-## Advice To Future Me
-
-- The mathematical foundations (probability, linear algebra) are not optional — invest time in them upfront.
-- Work through the attention mechanism by hand at least once. The QKV intuition is worth the effort.
-- Don't skip the classical material (TF-IDF, BM25) — it still underpins a lot of modern systems (RAG pipelines, for one).
-- If you're taking this alongside another heavy course, the combined workload will be intense.
+NLP is a field in rapid transition, and the course does a reasonable job of covering the landscape from classical to modern approaches. The Transformer and attention content was the most valuable part. The assignments were the weakest link — they didn't do justice to the breadth of the material. Combined with the significant overlap with my undergrad NLP course, it wasn't the most rewarding course in the program, but the newer material on attention, Transformers, and retriever-reader pipelines was worth the time.
 
 ## What's Next
 
