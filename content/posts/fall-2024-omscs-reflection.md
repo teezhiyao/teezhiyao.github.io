@@ -1,7 +1,7 @@
 ---
 title: "Fall 2024 OMSCS: GIOS and IHPC"
 date: 2024-12-15
-draft: true
+draft: false
 categories: [learning, omscs]
 tags: [omscs, georgia-tech, cs-6200, cse-6220, operating-systems, high-performance-computing]
 description: "My reflection on Fall 2024 — my first OMSCS semester with GIOS and IHPC."
