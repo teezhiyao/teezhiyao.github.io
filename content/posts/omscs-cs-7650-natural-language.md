@@ -69,4 +69,4 @@ NLP is a field in rapid transition, and the course does a reasonable job of cove
 
 This course has given me a much better foundation for understanding LLMs and building systems around them. I'm not planning to dive deeper into NLP specifically, but the concepts here — especially the retriever-reader pattern and attention mechanisms — are directly applicable to the agent-based systems and RAG pipelines I work with in my homelab and personal projects.
 
-*This post was summarized from course notes and materials with AI assistance.*
+*Iterated with my own opinion and thoughts with the help of AI.*
