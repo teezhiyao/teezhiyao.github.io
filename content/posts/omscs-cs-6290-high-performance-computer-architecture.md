@@ -1,7 +1,7 @@
 ---
 title: "OMSCS: CS 6290 High Performance Computer Architecture"
 date: 2025-05-01
-draft: true
+draft: false
 categories: [learning, omscs]
 tags: [omscs, georgia-tech, cs-6290, computer-architecture]
 description: "My reflection on HPCA — from pipelining to cache coherence."
