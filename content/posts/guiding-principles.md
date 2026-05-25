@@ -11,17 +11,33 @@ Beliefs and principles developed over time that guide how I approach work, learn
 
 ## When you fail to plan, you plan to fail
 
-This is the principle I lean on most in my day-to-day work. As a QA engineer, I see the consequences of insufficient planning regularly — edge cases missed, environments not ready, dependencies overlooked.
+This is the principle I lean on most — across work, studies, and life. The idea is simple: a little forethought goes a long way in avoiding avoidable failure.
 
-Planning doesn't mean over-engineering every detail. It means thinking ahead enough to identify what could go wrong, what resources you'll need, and what the milestones look like. A rough plan executed well beats a perfect plan that never gets finished.
+### At work
 
-In practice, this shows up as:
-- Writing test plans before test execution, not during
-- Breaking down ambiguous tasks into concrete steps
-- Adding buffer time for the unexpected (because the unexpected is expected)
-- Keeping a backlog of known risks and mitigation steps
+I see the consequences of insufficient planning regularly. Being in QA means I'm most often towards the end of the product or development cycle, making the ripple effects of poor planning particularly visible — edge cases missed, environments not ready, dependencies overlooked. This isn't specific to QA; it's an observation about work projects in general. But from where I sit, those gaps are harder to ignore.
 
-The cost of planning is time. The cost of not planning is rework, firefighting, and missed deadlines. I've found the former is almost always cheaper.
+### In studies
+
+OMSCS has reinforced this too. A semester without a plan for assignment deadlines, exam schedules, and project milestones means late nights and last-minute scrambles. On the flip side, mapping out the semester upfront — even roughly — makes the workload manageable and frees up mental energy for actually learning.
+
+### In life
+
+On a personal level, planning shows up in smaller ways: meal prepping for the week, scheduling downtime intentionally rather than waiting to burn out, setting financial goals. The same pattern holds — a little structure prevents a lot of friction.
+
+### The balance with action
+
+There's an inherent tension between this principle and *"Be in the arena"* — plan vs. act, deliberate vs. do. The contradiction is real, and I don't pretend to have resolved it perfectly.
+
+What I've landed on is: **plan enough to avoid preventable failure, then act.** A rough plan executed well beats a perfect plan that never ships. The goal isn't to eliminate uncertainty through over-planning — it's to build enough of a scaffold that action can happen confidently and adaptively.
+
+In practice, this means:
+- Breaking down ambiguous tasks into concrete next steps
+- Adding buffer for the unexpected (because the unexpected is expected)
+- Keeping a backlog of known risks, not a rigid script
+- Shipping the imperfect plan and iterating rather than waiting for the perfect one
+
+The cost of planning is time. The cost of not planning is rework, firefighting, and missed deadlines. I've found the former is almost always cheaper — as long as you know when to stop planning and start doing.
 
 ---
 
