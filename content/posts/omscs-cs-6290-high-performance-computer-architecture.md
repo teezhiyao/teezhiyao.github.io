@@ -57,8 +57,6 @@ The course was quiz-heavy. Regular lecture quizzes and problem sets that require
 
 HPCA gave me a proper understanding of how modern processors actually work — not just the abstraction layer that operating systems and compilers present, but the hardware mechanisms underneath. The mental models (Iron Law, Amdahl's Law, the memory wall) are generally useful for reasoning about performance in any systems context.
 
-That said, the absence of a hands-on project — modifying a simple simulator, implementing a branch predictor — was a noticeable gap. The quiz-based approach tests whether you can trace through existing mechanisms, but it doesn't test whether you can design or evaluate tradeoffs yourself. For a course about architecture, that felt like a missed opportunity.
-
 ## What's Next
 
 This course connects directly to the systems thinking I use daily — understanding cache behaviour, memory hierarchy, and parallelism fundamentals helps when reasoning about performance in any context. I'm not planning to go deeper into architecture specifically, but the concepts here are foundational for any performance-oriented engineering work.
