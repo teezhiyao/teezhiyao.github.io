@@ -1,5 +1,5 @@
 ---
-title: "OMSCS: CS 6290 High Performance Computer Architecture"
+title: "OMSCS: CS 6290 High Performance Computer Architecture (Spring 2025)"
 date: 2025-05-01
 draft: false
 categories: [learning, omscs]

@@ -1,5 +1,5 @@
 ---
-title: "OMSCS: CS 6601 Artificial Intelligence"
+title: "OMSCS: CS 6601 Artificial Intelligence (Spring 2024)"
 date: 2024-05-02
 draft: false
 categories: [learning, omscs]

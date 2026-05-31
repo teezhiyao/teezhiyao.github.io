@@ -1,5 +1,5 @@
 ---
-title: "OMSCS: CS 7632 Game AI"
+title: "OMSCS: CS 7632 Game AI (Spring 2026)"
 date: 2026-05-07
 draft: true
 categories: [learning, omscs]

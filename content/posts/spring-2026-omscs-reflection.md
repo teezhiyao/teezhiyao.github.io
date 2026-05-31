@@ -1,5 +1,5 @@
 ---
-title: "Spring 2026 OMSCS — Game AI & Software Analysis"
+title: "OMSCS: Game AI and Software Analysis (Spring 2026)"
 date: 2026-05-02
 categories: [omscs, academics]
 tags: [cs7632, cs6340, game-ai, software-analysis, gtech, omscs]

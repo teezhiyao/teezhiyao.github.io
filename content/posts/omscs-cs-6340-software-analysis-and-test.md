@@ -1,5 +1,5 @@
 ---
-title: "OMSCS: CS 6340 Software Analysis and Test"
+title: "OMSCS: CS 6340 Software Analysis and Test (Spring 2026)"
 date: 2026-05-07
 draft: true
 categories: [learning, omscs]

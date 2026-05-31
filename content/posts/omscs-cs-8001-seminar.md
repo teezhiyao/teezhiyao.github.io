@@ -1,5 +1,5 @@
 ---
-title: "OMSCS: CS 8001 Seminar"
+title: "OMSCS: CS 8001 Seminar (Spring 2024)"
 date: 2024-05-02
 draft: true
 categories: [learning, omscs]

@@ -1,5 +1,5 @@
 ---
-title: "OMSCS: CS 7650 Natural Language"
+title: "OMSCS: CS 7650 Natural Language (Fall 2025)"
 date: 2025-12-11
 draft: false
 categories: [learning, omscs]

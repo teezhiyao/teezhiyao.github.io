@@ -1,5 +1,5 @@
 ---
-title: "OMSCS: CSE 6220 High Performance Computing"
+title: "OMSCS: CSE 6220 High Performance Computing (Fall 2024)"
 date: 2024-12-12
 draft: true
 categories: [learning, omscs]

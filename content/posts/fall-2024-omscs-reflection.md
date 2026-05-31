@@ -1,5 +1,5 @@
 ---
-title: "Fall 2024 OMSCS: GIOS and IHPC"
+title: "OMSCS: GIOS and High Performance Computing (Fall 2024)"
 date: 2024-12-15
 draft: false
 categories: [learning, omscs]

@@ -1,5 +1,5 @@
 ---
-title: "OMSCS: CS 6200 Graduate Introduction to Operating Systems"
+title: "OMSCS: CS 6200 Graduate Introduction to Operating Systems (Fall 2024)"
 date: 2024-12-12
 draft: true
 categories: [learning, omscs]
