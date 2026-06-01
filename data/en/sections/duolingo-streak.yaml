@@ -1,7 +1,0 @@
-section:
-  id: duolingo-streak
-  name: "Duolingo Streak"
-  enable: true
-  weight: 7
-  showOnNavbar: true
-  template: sections/duolingo-streak.html
