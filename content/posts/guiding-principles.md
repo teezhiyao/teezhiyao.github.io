@@ -1,6 +1,6 @@
 ---
 title: "Guiding Principles"
-date: 2026-05-25
+date: 2026-04-30
 categories: [personal, philosophy]
 tags: [principles, values, reflection]
 ---
