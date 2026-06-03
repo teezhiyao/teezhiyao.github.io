@@ -38,7 +38,7 @@ When faced with a choice, I try to ask: *What am I giving up by choosing this?* 
 
 ## Be in the arena (The Man in the Arena)
 
-Theodore Roosevelt's "Man in the Arena" speech resonates with me: *"It is not the critic who counts… the credit belongs to the man who is actually in the arena."*
+Theodore Roosevelt's "Man in the Arena" speech resonates with me: "It is not the critic who counts… the credit belongs to the man who is actually in the arena." I first came across this through Brené Brown's *Daring Greatly*, where she uses it as a framework for vulnerability and courage.
 
 I try to favour action over passive observation. It's easy to critique from the sidelines, to point out flaws without putting skin in the game. But real learning and growth come from trying, failing, iterating, and trying again.
 
