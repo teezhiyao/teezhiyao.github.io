@@ -52,7 +52,7 @@ The people who try and risk failure are the ones who learn the most. I'd rather 
 
 ---
 
-## Communication builds trust
+<!-- ## Communication builds trust
 
 Clear, honest communication is the foundation of any good relationship — whether with colleagues, managers, friends, or family.
 
@@ -66,7 +66,7 @@ In personal contexts, it's about being present in conversations, checking in wit
 
 Trust is built drop by drop through consistent, honest communication. It's eroded quickly by silence, ambiguity, or half-truths.
 
----
+--- -->
 
 ## Vulnerability is strength
 
@@ -82,7 +82,7 @@ The shift in mindset: vulnerability isn't weakness — it's the prerequisite for
 
 ---
 
-## Practice consistency and empathy
+<!-- ## Practice consistency and empathy
 
 This principle ties the others together. Consistency means acting in alignment with my values across different contexts — not having one set of standards for work and another for personal life, or treating people differently based on status.
 
@@ -90,6 +90,6 @@ Empathy means trying to understand where someone else is coming from, especially
 
 Together, they form a simple guideline: treat people fairly, uphold your standards regardless of who's watching, and assume good intent.
 
----
+--- -->
 
 *Last updated: May 2026*
