@@ -8,6 +8,17 @@
   {{ $author = (index site.Data site.Language.Lang).author }}
 {{ end }}
 
+{{ $duolingoUsername := "teezhiyao" }}
+{{ $duolingoStreak := "" }}
+{{ $duolingoAPIURL := printf "https://www.duolingo.com/2017-06-30/users?username=%s" $duolingoUsername }}
+{{ $duolingoHeaders := dict "User-Agent" "Mozilla/5.0 (compatible; HugoStaticSite/1.0; +https://teezhiyao.github.io)" }}
+{{ with resources.GetRemote $duolingoAPIURL (dict "headers" $duolingoHeaders) }}
+  {{ with . | transform.Unmarshal }}
+    {{ $user := index .users 0 }}
+    {{ $duolingoStreak = $user.streak }}
+  {{ end }}
+{{ end }}
+
 <div class="container anchor p-lg-3 about-section" id="{{ $sectionID }}">
   <div class="row pt-sm-2 pt-md-4 align-self-center">
     <!-- summary column -->
@@ -48,6 +59,13 @@
       <a href="{{ .url | relURL }}" title="{{ .title }}" target="#"
         ><button class="btn btn-dark">{{ .title }}</button></a
       >
+      {{ end }}
+      {{ with $duolingoStreak }}
+      <div class="p-1 small text-muted">
+        <a href="https://www.duolingo.com/profile/{{ $duolingoUsername }}" target="_blank" rel="noopener" class="text-muted text-decoration-none">
+          Duolingo streak: {{ . }} days
+        </a>
+      </div>
       {{ end }}
     </div>
 
