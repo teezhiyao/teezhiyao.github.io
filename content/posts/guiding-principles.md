@@ -68,15 +68,16 @@ Trust is built drop by drop through consistent, honest communication. It's erode
 
 --- -->
 
-## Vulnerability is strength
+## Vulnerability is not weakness
 
-This one took me the longest to internalise. There's a natural instinct to project competence — to have the right answer, to never be uncertain. But I've learned that admitting uncertainty or mistakes actually builds more trust and creates space for real growth.
+<!-- This one took me the longest to internalise. There's a natural instinct to project competence — to have the right answer, to never be uncertain. But I've learned that admitting uncertainty or mistakes actually builds more trust and creates space for real growth. -->
+
+I also saw this from Brené Brown's *Daring Greatly* and it's really one of those things where it's never going to be easy, yet necessary when forging deeper, more meaningful connections.
 
 Vulnerability in practice:
 - Saying "I don't know, but I'll find out" instead of faking an answer
 - Sharing early drafts and half-baked ideas for feedback rather than polishing in isolation
-- Owning up to mistakes quickly instead of deflecting or making excuses
-- Asking for help when stuck, even when it feels uncomfortable
+- Owning up to mistakes
 
 The shift in mindset: vulnerability isn't weakness — it's the prerequisite for learning and genuine connection. You can't improve what you pretend is already perfect.
 

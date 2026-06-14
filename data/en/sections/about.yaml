@@ -19,12 +19,12 @@ principles:
     url: "/posts/guiding-principles/#everything-has-a-trade-off"
   - title: "Be in the arena (The Man in the Arena)"
     url: "/posts/guiding-principles/#be-in-the-arena-the-man-in-the-arena"
-  - title: "Communication builds trust"
-    url: "/posts/guiding-principles/#communication-builds-trust"
-  - title: "Vulnerability is strength"
-    url: "/posts/guiding-principles/#vulnerability-is-strength"
-  - title: "Practice consistency and empathy"
-    url: "/posts/guiding-principles/#practice-consistency-and-empathy"
+  # - title: "Communication builds trust"
+  #   url: "/posts/guiding-principles/#communication-builds-trust"
+  - title: "Vulnerability is not weakness"
+    url: "/posts/guiding-principles/#vulnerability-is-not-weakness"
+  # - title: "Practice consistency and empathy"
+  #   url: "/posts/guiding-principles/#practice-consistency-and-empathy"
 
 sections:
   - type: "timeline"
