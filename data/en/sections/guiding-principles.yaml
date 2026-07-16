@@ -1,14 +1,23 @@
 section:
   id: guiding-principles
-  name: "Guiding Quotes"
-  enable: true
+  name: "Guiding Principles"
+  enable: false
   weight: 2
-  showOnNavbar: true
+  showOnNavbar: false
   template: sections/guiding-principles.html
 
-title: Guiding quotes
-description: Quotes that call out to me
+title: Guiding principles
+description: Beliefs and principles developed over time
 
-quotes:
-  - text: "You don't hire someone smart to tell you what to do"
-  - text: "If you have unlimited time in the world, of course you're gonna put out something good"
+principles:
+  - title: "When you fail to plan, you plan to fail"
+    description: "I try to plan deliberately; without planning, avoidable failure is more likely."
+  - title: "Everything has a trade-off"
+    description: "I try to stay aware that every choice has opportunity cost, and I aim to make intentional decisions based on what matters most."
+  - title: "Be in the arena (The Man in the Arena)"
+    description: "I try to favour action over passive observation—those who try and risk failure often learn the most."
+  - title: "Vulnerability is not weakness"
+    description: "I aim to be open about uncertainty or mistakes because that enables learning and real connection."
+  - title: "You don't hire someone smart to tell you what to do"
+  - title: "If you have unlimited time in the world, of course you're gonna put out something good"
+
