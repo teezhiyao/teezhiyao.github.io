@@ -13,8 +13,18 @@ summary: |
   I’m a QA Engineer with a strong eye for detail, precision, and system reliability. Beyond testing, I enjoy building things—from self-hosted infrastructure to personal automation pipelines—and understanding how systems work end to end. Currently, I’m pursuing a Master’s degree in Computer Science at Georgia Institute of Technology while exploring side projects across software engineering, automation, and infrastructure. I believe in continuous learning, documenting my journey, and building systems that solve real problems. This year, I’ve been guided by the theme of doing things in moderation — pursuing growth with intention, moderation, and balance.
 
 quotes:
-  - text: "You don't hire someone smart to tell you what to do"
-  - text: "If you have unlimited time in the world, of course you're gonna put out something good"
+  - title: "When you fail to plan, you plan to fail"
+    url: "/posts/guiding-principles/#when-you-fail-to-plan-you-plan-to-fail"
+  - title: "Everything has a trade-off"
+    url: "/posts/guiding-principles/#everything-has-a-trade-off"
+  - title: "Be in the arena (The Man in the Arena)"
+    url: "/posts/guiding-principles/#be-in-the-arena-the-man-in-the-arena"
+  # - title: "Communication builds trust"
+  #   url: "/posts/guiding-principles/#communication-builds-trust"
+  - title: "Vulnerability is not weakness"
+    url: "/posts/guiding-principles/#vulnerability-is-not-weakness"
+  # - title: "Practice consistency and empathy"
+  #   url: "/posts/guiding-principles/#practice-consistency-and-empathy"
 
 sections:
   - type: "timeline"
