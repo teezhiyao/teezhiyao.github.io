@@ -50,6 +50,13 @@ params:
   newsletter:
     enable: false
 
+  # Analytics
+  analytics:
+    enable: true
+    services:
+      google:
+        id: G-B8JJ2KDDE6
+
   # Top navbar
   topNavbar:
     maxVisibleSections: 8
