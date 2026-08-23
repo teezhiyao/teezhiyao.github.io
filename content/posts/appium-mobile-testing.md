@@ -6,7 +6,7 @@ tags: [appium, mobile-testing, automation, qa, android]
 draft: true
 ---
 
-Setting up and using Appium for mobile application testing on the AXS platform.
+Setting up and using Appium for mobile application testing
 
 ## Environment Setup
 

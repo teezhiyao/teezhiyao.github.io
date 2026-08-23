@@ -84,7 +84,7 @@ The workflow runs on pushes to `main` and manual dispatch. It installs Hugo, res
 
 ## Extra Context
 
-See `REPO_CONTEXT.md` for a more detailed repo map and maintenance notes.
+See `AGENTS.md` for a more detailed repo map and maintenance notes for coding agents.
 
 ## Repository Hygiene
 

@@ -1,86 +1,131 @@
 ---
-title: "Building insaneweihang.com — A Marvel Rivals Team-Up Tool"
+title: "Building insaneweihang.com - A Marvel Rivals Team-Up Tool"
 date: 2026-07-30
 categories: [project, game, web-dev]
-tags: [marvel-rivals, github-pages, cloudflare, analytics, d1, side-project]
+tags: [marvel-rivals, github-pages, cloudflare, analytics, github-actions, side-project]
 draft: true
 ---
 
-I put together a little tool for Marvel Rivals called [insaneweihang.com](https://insaneweihang.com) — a team-up browser and planner that helps you find fully enhanced team compositions quickly. This post covers how it's set up and some of the infrastructure decisions.
+I built [insaneweihang.com](https://insaneweihang.com), a small Marvel Rivals team-up browser and planner for a friend who creates Marvel Rivals content.
 
-## Background
+The site started from a simple question: given the way Marvel Rivals team-ups work, what six-hero teams can be formed where every hero is fully enhanced? I do not actively play the game myself, but the problem was interesting because it was part game knowledge, part combinatorics, and part product design.
 
-The project came out of a question from a friend — a content creator who mostly plays Marvel Rivals. I don't play the game myself, but his question was essentially a math problem: each hero can get a power-up when another corresponding hero is on the team, so how many teams of 6 can be formed where every hero is powered up? The site is the answer to that — instead of working through the combinations by hand, it enumerates every fully-enhanced composition and makes them browsable.
+This post is a rough write-up of what I built, how I approached it, and the setup work around deployment, domain routing, and basic traffic tracking.
 
-## What It Does
+## What I Built
 
-Three views in a single-page app:
+The site is a single-page static web app with three main views:
 
-- **Team Browser** — Browse all valid team compositions, filter by hero or role, toggle between all teams and 2-2-2 only
-- **Team Planner** — Build your own composition and see which team-ups activate
-- **Maps** — Map info reference
+- **Team Browser** - browse valid fully enhanced team compositions, filter by hero or role, and toggle between all teams and 2-2-2 compositions.
+- **Team Planner** - manually build a team and see which team-ups activate.
+- **Maps** - keep map information in the same lightweight reference tool.
 
-Data is kept current with patch updates as Marvel Rivals evolves.
+The goal was not to build a full game database. It was to answer a specific practical question quickly: "Which teams work if I want everyone powered up?"
 
-## Hosting: GitHub Pages + Custom Domain
+## Using AI To Build Faster
 
-The site is a vanilla HTML/CSS/JS static site hosted on GitHub Pages with a custom domain pointed at `insaneweihang.com`. The CNAME record and Pages settings are configured through GitHub's repo settings — nothing fancy, just a `docs/` or root folder deployment with the domain hooked up.
+I used AI heavily as a coding assistant for this project. The useful part was not asking it to magically build the whole product, but using it to move faster through small loops:
 
-## Analytics
+- sketching the first HTML/CSS/JS structure
+- iterating on UI layout and filter behaviour
+- turning the team-up rules into testable logic
+- refactoring rough code into clearer functions
+- checking edge cases in the composition-generation logic
+- drafting small deployment and analytics snippets
 
-Two layers:
+The constraint was that I still had to understand the output. The team-up rules are domain-specific, and small mistakes can produce teams that look plausible but are wrong. AI was useful for acceleration, but the correctness still came from reviewing the rules, testing generated teams, and manually checking behaviour on the site.
 
-### Google Analytics (GA4)
+## The Team-Up Algorithm
 
-A standard GA4 tag is embedded in the `<head>`:
+At a high level, the algorithm treats each hero as data:
 
-```html
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPFXF8XZSR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-LPFXF8XZSR");
-</script>
-```
+- hero name
+- role
+- team-up relationships
+- whether the hero receives an enhancement from another hero
 
-### Cloudflare Web Analytics
+From there, the site can evaluate a candidate team of six heroes by checking each selected hero against the team-up data. A team is considered fully enhanced only if every hero who needs a matching partner has that condition satisfied within the same six-hero composition.
 
-Cloudflare's privacy-focused Web Analytics runs alongside it for a lightweight, ad-blocker-friendly view of traffic. Both give slightly different data, and having both is useful — GA4 for depth, Cloudflare for basic reach without cookies.
+The browser side then generates or stores valid compositions and lets the UI filter them by:
 
-## Feedback: Cloudflare Workers + D1
+- selected hero
+- role
+- all valid teams versus 2-2-2 teams
 
-The feedback form submits to a Cloudflare Worker endpoint:
+The 2-2-2 filter was important because raw valid teams are useful mathematically, but players often care about role balance. Separating "all valid teams" from "role-balanced teams" made the tool more usable.
 
-```
-https://marvel-rivals-feedback.insaneweihang.workers.dev/feedback
-```
+## Static Site Architecture
 
-The Worker writes submissions to a **Cloudflare D1** database — serverless SQLite that requires no provisioning, scales to zero, and costs next to nothing for a low-traffic side project.
+I kept the app deliberately simple:
+
+- vanilla HTML, CSS, and JavaScript
+- no frontend framework
+- no build step for the app itself
+- static hosting through GitHub Pages
+
+For a small reference tool, this was enough. It also made the deployment path straightforward: update the files, push to GitHub, and let GitHub Pages serve the new version.
+
+## Deployment With GitHub Actions
+
+I added a GitHub Actions deployment flow so the site can be updated consistently from the repository rather than relying on manual upload steps.
+
+The workflow is intentionally boring:
+
+- push changes to the repo
+- GitHub Actions builds or prepares the static output
+- GitHub Pages publishes it
+
+For this kind of side project, boring infrastructure is a feature. The less deployment ceremony there is, the more likely I am to keep the data current when Marvel Rivals patches change the team-up rules.
+
+## Domain Routing
+
+I also helped set up the custom domain so the project lives at:
+
+[insaneweihang.com](https://insaneweihang.com)
+
+The domain was bought separately, then routed to GitHub Pages. That involved connecting the custom domain in the repository settings and making sure the DNS records pointed at GitHub Pages correctly.
+
+The value of the custom domain is mostly practical. It is easier to share on stream, in Discord, or in a video description than a long GitHub Pages URL.
+
+## Analytics And Baseline Tracking
+
+I added two basic layers of traffic tracking:
+
+- **Cloudflare Web Analytics** for lightweight baseline traffic visibility.
+- **Google Analytics 4** for deeper traffic and usage reporting.
+
+For a side project like this, I mainly wanted to answer simple questions:
+
+- Are people actually visiting the tool?
+- Which pages or views are getting used?
+- Did a content mention or Discord share lead to a traffic spike?
+
+Cloudflare gives a simple privacy-friendly baseline, while GA is useful when more detailed reporting is needed. I did not want analytics to become the project; the point was just to have enough signal to know whether the tool was useful.
+
+## Feedback Form
+
+The site also has a feedback path backed by Cloudflare Workers and D1.
 
 The form collects:
-- Feedback type (dropdown)
-- Title
-- Message
-- Optional contact info
 
-Honeypot field for spam, client-side validation, and a clean status feedback UI. The Worker handles the insert and returns a success/error response.
+- feedback type
+- title
+- message
+- optional contact information
 
-## Design
+The static site submits to a Cloudflare Worker, and the Worker writes the response into a D1 database. That gave the project a tiny backend without turning the whole thing into a full-stack application.
 
-Kept it simple: light theme, Inter font, role-coloured badges (Vanguard blue, Duelist red, Strategist green). Sticky header, tab navigation, Discord and Ko-fi links in the header. No framework, no build step — just HTML, CSS, and a single `app.js` file loaded cache-busted with the date.
+## What I Learned
 
-## Why Static + Workers
+This was a good reminder that small tools are often valuable when they answer one specific question clearly.
 
-A static site keeps things simple: no servers, no containers, just push to GitHub and it's live. But static sites can't do forms. Cloudflare Workers + D1 fills that gap without spinning up a backend or paying for a database — the Worker is a single script, D1 is free tier, and both are managed through Cloudflare's dashboard.
+The interesting parts were not only technical. I had to translate a game mechanic I did not personally play into a data model, an algorithm, and a UI that players could actually use. That meant checking assumptions with someone closer to the game, keeping the interface focused, and making infrastructure decisions that would not become maintenance overhead.
 
-## What I'd Do Differently
+If I continue improving it, I would look at:
 
-If I were starting over or adding features:
-- **Data as JSON** — The team composition data could be fetched from a Worker endpoint so updates don't require a full site redeploy
-- **Service worker cache** — The data is fairly static between patches, so a service worker could make it work offline
-- **D1 for more than feedback** — Could use it to track which teams users check most, or store community-contributed team ratings
+- moving more game data into structured JSON
+- adding clearer validation tests around team-up rules
+- making patch updates easier to review
+- tracking which filters or team compositions users actually care about
 
----
-
-You can find the site at [insaneweihang.com](https://insaneweihang.com), join the [Discord](https://discord.gg/82V8xT8qRx) if you play, or send feedback right from the site.
+For now, the useful part is that the site exists, is shareable, and answers the original question quickly.

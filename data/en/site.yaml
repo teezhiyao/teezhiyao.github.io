@@ -4,3 +4,6 @@ title: Tee Zhi Yao
 tagline: Notes & Projects
 author: Tee Zhi Yao
 dateFormat: "January 2, 2006"
+customMenus:
+  - name: Tech for Good
+    url: /tech-for-good-singapore/
