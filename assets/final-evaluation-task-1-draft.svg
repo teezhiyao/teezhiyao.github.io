@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect width="1400" height="900" fill="#f3f6fa"/>
+  <rect x="60" y="50" width="1280" height="800" rx="30" fill="#ffffff" stroke="#c9d4df" stroke-width="3"/>
+
+  <path d="M90 50 H1310 A30 30 0 0 1 1340 80 V190 H60 V80 A30 30 0 0 1 90 50 Z" fill="#245f96"/>
+  <text x="110" y="118" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">Task 1: Prepare and load a draft</text>
+  <text x="110" y="164" fill="#dcebf8" font-family="Arial, Helvetica, sans-serif" font-size="25">Prepare your preferences before tickets go on sale.</text>
+
+  <rect x="105" y="235" width="1190" height="260" rx="20" fill="#edf5fc" stroke="#9fc2e2" stroke-width="2"/>
+  <text x="145" y="292" fill="#164a78" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">YOUR GOAL</text>
+  <text x="165" y="345" fill="#243746" font-family="Arial, Helvetica, sans-serif" font-size="29">
+    <tspan x="165" dy="0">&#8226; Purchase two adjacent seats</tspan>
+    <tspan x="165" dy="44">&#8226; Spend no more than $150 per ticket</tspan>
+    <tspan x="165" dy="44">&#8226; Prefer a left-side view</tspan>
+    <tspan x="165" dy="44">&#8226; Avoid restricted-view seats</tspan>
+  </text>
+
+  <text x="110" y="565" fill="#18334c" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">WHAT TO DO</text>
+  <text x="135" y="620" fill="#243746" font-family="Arial, Helvetica, sans-serif" font-size="28">
+    <tspan x="135" dy="0">1. Create and save a draft representing these requirements.</tspan>
+    <tspan x="135" dy="52">2. Return to the main booking flow and load the saved draft.</tspan>
+    <tspan x="135" dy="52">3. Check whether the loaded settings match your intentions.</tspan>
+    <tspan x="175" dy="40">Do not select seats yet.</tspan>
+  </text>
+
+  <rect x="105" y="780" width="1190" height="48" rx="12" fill="#f3f6f9"/>
+  <text x="700" y="812" text-anchor="middle" fill="#607080" font-family="Arial, Helvetica, sans-serif" font-size="21">No response is required for this instruction. Continue with the questions below.</text>
+</svg>

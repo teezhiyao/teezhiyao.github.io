@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1080" viewBox="0 0 1400 1080">
+  <rect width="1400" height="1080" fill="#f3f6fa"/>
+  <rect x="60" y="50" width="1280" height="980" rx="30" fill="#ffffff" stroke="#c9d4df" stroke-width="3"/>
+
+  <path d="M90 50 H1310 A30 30 0 0 1 1340 80 V190 H60 V80 A30 30 0 0 1 90 50 Z" fill="#287451"/>
+  <text x="110" y="118" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">Task 3: Configure and confirm seats</text>
+  <text x="110" y="164" fill="#daf0e4" font-family="Arial, Helvetica, sans-serif" font-size="25">Configure a new selection manually and recover from an invalid seat pair.</text>
+
+  <rect x="105" y="225" width="1190" height="325" rx="20" fill="#edf8f2" stroke="#98c8ae" stroke-width="2"/>
+  <text x="145" y="282" fill="#1e6042" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">YOUR GOAL</text>
+  <text x="165" y="335" fill="#243746" font-family="Arial, Helvetica, sans-serif" font-size="29">
+    <tspan x="165" dy="0">&#8226; Configure the requirements manually - do not load the saved draft</tspan>
+    <tspan x="165" dy="44">&#8226; Select two adjacent seats</tspan>
+    <tspan x="165" dy="44">&#8226; Spend no more than $150 per ticket</tspan>
+    <tspan x="165" dy="44">&#8226; Prefer a right-side view</tspan>
+    <tspan x="165" dy="44">&#8226; Avoid restricted-view seats</tspan>
+  </text>
+
+  <text x="110" y="620" fill="#18334c" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">WHAT TO DO</text>
+  <text x="135" y="675" fill="#243746" font-family="Arial, Helvetica, sans-serif" font-size="28">
+    <tspan x="135" dy="0">1. Use whichever prototype features you consider appropriate.</tspan>
+    <tspan x="135" dy="52">2. During exact-seat selection, deliberately try two non-adjacent seats.</tspan>
+    <tspan x="135" dy="52">3. Review the feedback and correct the invalid selection.</tspan>
+    <tspan x="135" dy="52">4. Continue until you reach the confirmation screen.</tspan>
+    <tspan x="135" dy="52">5. Copy the anonymous evaluation log into the survey.</tspan>
+  </text>
+
+  <rect x="105" y="960" width="1190" height="48" rx="12" fill="#f3f6f9"/>
+  <text x="700" y="992" text-anchor="middle" fill="#607080" font-family="Arial, Helvetica, sans-serif" font-size="21">Complete this task in the same prototype session. Do not refresh the prototype.</text>
+</svg>

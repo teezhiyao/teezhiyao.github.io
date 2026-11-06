@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850">
+  <rect width="1400" height="850" fill="#f3f6fa"/>
+  <rect x="60" y="50" width="1280" height="750" rx="30" fill="#ffffff" stroke="#c9d4df" stroke-width="3"/>
+
+  <path d="M90 50 H1310 A30 30 0 0 1 1340 80 V190 H60 V80 A30 30 0 0 1 90 50 Z" fill="#8a5a13"/>
+  <text x="110" y="118" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">Task 2: Respond to a no-match result</text>
+  <text x="110" y="164" fill="#fff1cf" font-family="Arial, Helvetica, sans-serif" font-size="25">Test how the interface supports recovery when no recommendation is available.</text>
+
+  <rect x="105" y="235" width="1190" height="190" rx="20" fill="#fff7e7" stroke="#dfbd72" stroke-width="2"/>
+  <text x="145" y="292" fill="#6c460e" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">TEMPORARILY CHANGE THE PREFERENCES</text>
+  <text x="165" y="350" fill="#243746" font-family="Arial, Helvetica, sans-serif" font-size="29">
+    <tspan x="165" dy="0">&#8226; Maximum price: $80 per ticket</tspan>
+    <tspan x="165" dy="46">&#8226; Preferred view: Central</tspan>
+  </text>
+
+  <text x="110" y="500" fill="#18334c" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">WHAT TO DO</text>
+  <text x="135" y="555" fill="#243746" font-family="Arial, Helvetica, sans-serif" font-size="28">
+    <tspan x="135" dy="0">1. Use Guided recommendations to look for suitable options.</tspan>
+    <tspan x="135" dy="52">2. This search is expected to produce no valid recommendation.</tspan>
+    <tspan x="135" dy="52">3. Copy the complete no-match message.</tspan>
+    <tspan x="135" dy="52">4. Respond using whichever recovery option you consider appropriate.</tspan>
+  </text>
+
+  <rect x="105" y="730" width="1190" height="48" rx="12" fill="#f3f6f9"/>
+  <text x="700" y="762" text-anchor="middle" fill="#607080" font-family="Arial, Helvetica, sans-serif" font-size="21">Paste the copied message into the response field below.</text>
+</svg>
